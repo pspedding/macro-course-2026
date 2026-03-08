@@ -1,0 +1,105 @@
+site_name: Macroeconomics 2026
+site_description: Introductory + Intermediate Macroeconomics — USYD-aligned self-study course
+site_author: Macroeconomics 2026
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - "Module 01 — Introduction to Macroeconomics; Measuring Macroeconomic Performance":
+    - "What is Macroeconomics? Scope and Key Questions": modules/module-01/M01.L01-what-is-macroeconomics.md
+    - "GDP — Definition and the Expenditure Approach": modules/module-01/M01.L02-gdp-expenditure-approach.md
+    - "The Income and Output Approaches to GDP": modules/module-01/M01.L03-income-output-approaches-gdp.md
+    - "Real vs Nominal GDP and Price Indices": modules/module-01/M01.L04-real-vs-nominal-gdp-price-indices.md
+    - "Business Cycles and Australian GDP Trends": modules/module-01/M01.L05-business-cycles-australian-gdp.md
+  - "Module 02 — Measuring the Price Level and Inflation; Savings and Wealth":
+    - "The Consumer Price Index — Construction and Uses": modules/module-02/M02.L01-cpi-construction-and-uses.md
+    - "Measuring Inflation — CPI vs GDP Deflator": modules/module-02/M02.L02-measuring-inflation-cpi-vs-deflator.md
+    - "Costs of Inflation and Hyperinflation": modules/module-02/M02.L03-costs-of-inflation-and-hyperinflation.md
+    - "Savings, Wealth, and the Household Balance Sheet": modules/module-02/M02.L04-savings-wealth-household-balance-sheet.md
+    - "Real vs Nominal Interest Rates — The Fisher Equation": modules/module-02/M02.L05-real-vs-nominal-interest-rates-fisher.md
+  - "Module 03 — Unemployment and the Labour Market; Introduction to Short-Term Fluctuations":
+    - "Measuring Unemployment — ABS Labour Force Survey": modules/module-03/M03.L01-measuring-unemployment.md
+    - "Types of Unemployment — Frictional, Structural, Cyclical": modules/module-03/M03.L02-types-of-unemployment.md
+    - "Labour Market Equilibrium and the Wage Rate": modules/module-03/M03.L03-labour-market-equilibrium.md
+    - "Costs of Unemployment — Economic and Social": modules/module-03/M03.L04-costs-of-unemployment.md
+    - "Introduction to Short-Term Fluctuations — What Causes Recessions?": modules/module-03/M03.L05-short-term-fluctuations-recessions.md
+  - "Module 04 — Macroeconomics in the Short-Run: The Basic Keynesian Model":
+    - "Keynesian Economics — Core Assumptions and Historical Context": modules/module-04/M04.L01-keynesian-economics-history.md
+    - "The Consumption Function and Marginal Propensity to Consume": modules/module-04/M04.L02-consumption-function-mpc.md
+    - "Planned vs Actual Expenditure and Aggregate Demand": modules/module-04/M04.L03-planned-vs-actual-expenditure.md
+    - "The Multiplier Effect — Derivation and Examples": modules/module-04/M04.L04-multiplier-effect.md
+    - "Recessionary and Inflationary Gaps": modules/module-04/M04.L05-recessionary-inflationary-gaps.md
+    - "Autonomous Spending Changes and Stabilisation Policy": modules/module-04/M04.L06-autonomous-spending-stabilisation-policy.md
+  - "Module 05 — Fiscal Policy, Money, Prices, and the Reserve Bank":
+    - "Fiscal Policy — Government Spending and Taxes": modules/module-05/M05.L01-fiscal-policy.md
+    - "The Australian Federal Budget — History and Deficits": modules/module-05/M05.L02-federal-budget-history.md
+    - "Money — Functions, Types, and Measures in Australia": modules/module-05/M05.L03-money-functions-types.md
+    - "The Banking System and the Reserve Bank of Australia": modules/module-05/M05.L04-banking-system-rba.md
+    - "Money Creation — Reserves, Deposits, and the Money Multiplier": modules/module-05/M05.L05-money-creation-multiplier.md
+    - "Price Level Determination and the Quantity Theory of Money": modules/module-05/M05.L06-quantity-theory-money.md
+  - "Module 06 — The Reserve Bank, Monetary Policy and the Economy":
+    - "The RBA's Mandate, Independence, and Governance": modules/module-06/M06.L01-rba-mandate-governance.md
+    - "The Cash Rate Target and Open Market Operations": modules/module-06/M06.L02-cash-rate-open-market.md
+    - "The Monetary Policy Transmission Mechanism": modules/module-06/M06.L03-transmission-mechanism.md
+    - "Inflation Targeting in Australia — History and Performance": modules/module-06/M06.L04-inflation-targeting.md
+    - "Monetary Policy in Australia — Recent RBA Decisions (2020–2025)": modules/module-06/M06.L05-rba-recent-decisions.md
+  - "Module 07 — Aggregate Demand and Aggregate Supply; Macroeconomic Policy":
+    - "The AD-AS Framework — Overview and Purpose": modules/module-07/M07.L01-ad-as-framework-overview.md
+    - "The Aggregate Demand Curve — Why it Slopes Down": modules/module-07/M07.L02-aggregate-demand-curve-slope.md
+    - "Factors Shifting the Aggregate Demand Curve": modules/module-07/M07.L03-factors-shifting-ad-curve.md
+    - "Short-Run Aggregate Supply — Derivation and Shifts": modules/module-07/M07.L04-short-run-aggregate-supply.md
+    - "Long-Run Aggregate Supply and Macroeconomic Equilibrium": modules/module-07/M07.L05-lras-and-macroeconomic-equilibrium.md
+    - "Demand and Supply Shocks — COVID-19 and Australia as Case Study": modules/module-07/M07.L06-covid19-case-study.md
+  - "Module 08 — The Economy in the Long Run: Introduction to Economic Growth":
+    - "Long-Run Economic Growth — Facts and Patterns": modules/module-08/M08.L01-long-run-growth-facts-patterns.md
+    - "Sources of Growth — Capital, Labour, and Technology (TFP)": modules/module-08/M08.L02-sources-of-growth-capital-labour-tfp.md
+    - "The Production Function and Diminishing Returns": modules/module-08/M08.L03-production-function-diminishing-returns.md
+    - "Australia's Growth Record — A Historical Perspective": modules/module-08/M08.L04-australia-growth-record-historical.md
+    - "Policies to Promote Long-Run Growth in Australia": modules/module-08/M08.L05-policies-to-promote-long-run-growth.md
+  - "Module 09 — Savings, Capital Formation, and Economic Growth":
+    - "The Savings-Investment Identity in an Open Economy": modules/module-09/M09.L01-savings-investment-identity.md
+    - "Capital Accumulation and Depreciation": modules/module-09/M09.L02-capital-accumulation-depreciation.md
+    - "The Solow Growth Model — Building Intuition": modules/module-09/M09.L03-solow-model-intuition.md
+    - "Steady-State Capital and Output": modules/module-09/M09.L04-steady-state-capital-output.md
+    - "Human Capital, Education, and Australia's Productivity": modules/module-09/M09.L05-human-capital-education-productivity.md
+  - "Module 10 — Exchange Rates and the Open Economy":
+    - "Exchange Rates — Nominal, Real, and Effective": modules/module-10/M10.L01-exchange-rates-nominal-real-effective.md
+    - "Purchasing Power Parity and Interest Rate Parity": modules/module-10/M10.L02-purchasing-power-parity-interest-rate-parity.md
+    - "AUD History — From Fixed to Float and Key Drivers": modules/module-10/M10.L03-aud-history-float-drivers.md
+    - "Exchange Rate Regimes — Fixed, Floating, and Managed": modules/module-10/M10.L04-exchange-rate-regimes.md
+    - "Exchange Rate Effects on Australian Trade and Output": modules/module-10/M10.L05-exchange-rate-effects-trade-output.md
+  - "Module 11 — The Balance of Payments; Net Exports and International Capital Flows":
+    - "The Balance of Payments — Structure and Components": modules/module-11/M11.L01-balance-of-payments-structure.md
+    - "Australia's Current Account — Trends and Drivers": modules/module-11/M11.L02-australia-current-account-trends.md
+    - "Capital and Financial Account — FDI and Portfolio Flows": modules/module-11/M11.L03-capital-financial-account-fdi-portfolio.md
+    - "Net Exports, the Saving-Investment Gap, and Trade Balance": modules/module-11/M11.L04-net-exports-saving-investment-gap.md
+    - "International Capital Flows and External Debt": modules/module-11/M11.L05-international-capital-flows-external-debt.md
+  - "Module 12 — Financial Crises; Macroeconomics: What Have We Learnt?":
+    - "What is a Financial Crisis? Types and Mechanisms": modules/module-12/M12.L01-financial-crisis-types-mechanisms.md
+    - "The 2008 Global Financial Crisis — Causes and Contagion": modules/module-12/M12.L02-2008-gfc-causes-contagion.md
+    - "Australia and the GFC — Why We Escaped Recession": modules/module-12/M12.L03-australia-gfc-avoided-recession.md
+    - "COVID-19 as a Macroeconomic Shock — Policy Response": modules/module-12/M12.L04-covid19-macroeconomic-shock-policy.md
+    - "Synthesis — Key Macroeconomic Debates and Lessons": modules/module-12/M12.L05-synthesis-macroeconomic-debates-lessons.md
