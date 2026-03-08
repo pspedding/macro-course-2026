@@ -6,12 +6,17 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -20,11 +25,6 @@ jobs:
 
       - name: Install MkDocs
         run: pip install "mkdocs<2" mkdocs-material
-
-      - name: Configure git for deploy
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy to gh-pages branch
         run: mkdocs gh-deploy --force
