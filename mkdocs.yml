@@ -103,3 +103,60 @@ nav:
     - "Australia and the GFC — Why We Escaped Recession": modules/module-12/M12.L03-australia-gfc-avoided-recession.md
     - "COVID-19 as a Macroeconomic Shock — Policy Response": modules/module-12/M12.L04-covid19-macroeconomic-shock-policy.md
     - "Synthesis — Key Macroeconomic Debates and Lessons": modules/module-12/M12.L05-synthesis-macroeconomic-debates-lessons.md
+  - "Module 13 — National Accounts and the Keynesian Cross (Advanced)":
+    - "National Accounts Revisited: GNI, NNI, and Sectoral Balances": modules/module-13/M13-L01-national-accounts-gni-nni-sectoral-balances.md
+    - "Keynesian Cross Model: Formal Treatment": modules/module-13/M13-L02-keynesian-cross-formal-treatment.md
+    - "The Investment Function and Determinants of Investment": modules/module-13/M13-L03-investment-function-determinants.md
+    - "Fiscal Multipliers: Algebra and Policy Implications": modules/module-13/M13-L04-fiscal-multipliers-algebra-policy.md
+    - "Automatic Stabilisers and the Cyclically-Adjusted Budget Balance": modules/module-13/M13-L05-automatic-stabilisers-cyclically-adjusted-balance.md
+    - "Australia's COVID Fiscal Response and Fiscal Consolidation": modules/module-13/M13-L06-australia-covid-fiscal-response-consolidation.md
+  - "Module 14 — The IS-LM Model":
+    - "The IS Curve: Goods Market Equilibrium": modules/module-14/M14-L01-is-curve-goods-market-equilibrium.md
+    - "The Money Market: Demand, Supply, and Equilibrium": modules/module-14/M14-L02-money-market-demand-supply-equilibrium.md
+    - "The LM Curve: Derivation and Interpretation": modules/module-14/M14-L03-lm-curve-derivation-interpretation.md
+    - "IS-LM Equilibrium: Graphical and Algebraic Analysis": modules/module-14/M14-L04-is-lm-equilibrium-algebraic-graphical.md
+    - "Comparative Statics: Shifts in IS and LM": modules/module-14/M14-L05-comparative-statics-is-lm-shifts.md
+  - "Module 15 — Monetary and Fiscal Policy in the IS-LM Model":
+    - "Monetary Policy in the IS-LM Model": modules/module-15/M15-L01-monetary-policy-islm.md
+    - "Fiscal Policy in the IS-LM Model and Crowding Out": modules/module-15/M15-L02-fiscal-policy-crowding-out.md
+    - "The Liquidity Trap and the Zero Lower Bound": modules/module-15/M15-L03-liquidity-trap-zlb.md
+    - "IS-LM and the Aggregate Demand Curve": modules/module-15/M15-L04-islm-aggregate-demand.md
+    - "The Policy Mix: Fiscal and Monetary Coordination": modules/module-15/M15-L05-policy-mix.md
+  - "Module 16 — The Phillips Curve and Inflation Dynamics":
+    - "Wage Setting and Price Setting Equations": modules/module-16/M16-L01-wage-price-setting.md
+    - "The Natural Rate of Unemployment (NAIRU)": modules/module-16/M16-L02-nairu.md
+    - "The Original Phillips Curve": modules/module-16/M16-L03-original-phillips-curve.md
+    - "The Expectations-Augmented Phillips Curve": modules/module-16/M16-L04-expectations-augmented-pc.md
+    - "Supply Shocks and the Phillips Curve": modules/module-16/M16-L05-supply-shocks-pc.md
+    - "The Australian Phillips Curve: Empirical Evidence": modules/module-16/M16-L06-australian-phillips-curve.md
+  - "Module 17 — IS-LM-PC Framework and Monetary Policy Rules":
+    - "Linking IS-LM to the Phillips Curve": modules/module-17/M17.L01-linking-islm-to-pc.md
+    - "IS-LM-PC Dynamics: Demand Shocks": modules/module-17/M17.L02-islmpc-demand-shocks.md
+    - "IS-LM-PC Dynamics: Supply Shocks and Stagflation": modules/module-17/M17.L03-supply-shocks-stagflation.md
+    - "The Taylor Rule and Monetary Policy Rules": modules/module-17/M17.L04-taylor-rule.md
+    - "Medium-Run Equilibrium and Policy Stabilisation": modules/module-17/M17.L05-medium-run-equilibrium.md
+  - "Module 18 — The Solow Growth Model (Advanced)":
+    - "Stylised Facts of Economic Growth: Kaldor's Facts": modules/module-18/M18.L01-kaldor-facts.md
+    - "The Solow Model: Full Mathematical Treatment": modules/module-18/M18.L02-solow-model-mathematics.md
+    - "Steady State, Convergence, and Transitional Dynamics": modules/module-18/M18.L03-convergence-transitional-dynamics.md
+    - "The Golden Rule of Capital Accumulation": modules/module-18/M18.L04-golden-rule.md
+    - "Population Growth and Technological Progress in the Solow Model": modules/module-18/M18.L05-population-growth-tech-progress.md
+  - "Module 19 — Endogenous Growth and Development":
+    - "Beyond Solow: Why Countries Differ in Income Levels": modules/module-19/M19.L01-beyond-solow.md
+    - "Endogenous Growth Theory: The AK Model": modules/module-19/M19.L02-ak-model.md
+    - "Human Capital, Ideas, and the Knowledge Economy": modules/module-19/M19.L03-human-capital-knowledge.md
+    - "Institutions, Geography, and Development": modules/module-19/M19.L04-institutions-geography.md
+    - "Australia's Productivity Challenge": modules/module-19/M19.L05-australia-productivity.md
+  - "Module 20 — Open Economy Macroeconomics: Mundell-Fleming":
+    - "The Mundell-Fleming Model: Open Economy IS-LM": modules/module-20/M20.L01-mundell-fleming-model.md
+    - "Mundell-Fleming Under Fixed Exchange Rates": modules/module-20/M20.L02-fixed-exchange-rates.md
+    - "Mundell-Fleming Under Floating Exchange Rates": modules/module-20/M20.L03-floating-exchange-rates.md
+    - "Capital Mobility and the Impossible Trilemma": modules/module-20/M20.L04-impossible-trilemma.md
+    - "Exchange Rate Overshooting: The Dornbusch Model": modules/module-20/M20.L05-dornbusch-overshooting.md
+    - "AUD and Monetary Policy: RBA in an Open Economy": modules/module-20/M20.L06-aud-rba-open-economy.md
+  - "Module 21 — Open Economy Macroeconomics Part II: Synthesis":
+    - "The Intertemporal Approach to the Current Account": modules/module-21/M21.L01-current-account-intertemporal.md
+    - "External Debt Sustainability": modules/module-21/M21.L02-external-debt-sustainability.md
+    - "Currency Crises and Speculative Attacks": modules/module-21/M21.L03-currency-crises-speculative-attacks.md
+    - "International Policy Coordination and Global Imbalances": modules/module-21/M21.L04-international-policy-coordination.md
+    - "Synthesis — Australia as an Open Economy": modules/module-21/M21.L05-synthesis-australia-open-economy.md
