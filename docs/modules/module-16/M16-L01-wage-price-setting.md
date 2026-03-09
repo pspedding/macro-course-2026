@@ -9,6 +9,11 @@
 
 ## Explanation
 
+!!! info "Key Diagram"
+    ![Figure 6: The Phillips Curve. Short-run curves shift with inflation expectations; the long-run curve is vertical at the NAIRU (~4.25% for Australia). The 2023 Australian data point shows inflation above target with unemployment below NAIRU.](../../assets/diagrams/06-phillips-curve.png)  
+    *Figure 6: The Phillips Curve. Short-run curves shift with inflation expectations; the long-run curve is vertical at the NAIRU (~4.25% for Australia). The 2023 Australian data point shows inflation above target with unemployment below NAIRU.*
+
+
 The labour market in Blanchard's intermediate macroeconomics framework is characterised by **imperfect competition** on both the goods and labour sides. Equilibrium is determined by two equations: the **wage-setting (WS)** relationship and the **price-setting (PS)** relationship.
 
 **Wage-Setting (WS):** Workers and firms bargain over nominal wages *W*, taking the expected price level *P^e* as given. Higher expected prices require higher nominal wages to maintain real purchasing power. The real wage workers can negotiate depends on:

@@ -11,6 +11,11 @@
 
 ## Explanation
 
+!!! info "Key Diagram"
+    ![Figure 5: The IS-LM Model. The IS curve (goods market) and LM curve (money market) intersect at equilibrium output Y* and interest rate i*.](../../assets/diagrams/05-is-lm.png)  
+    *Figure 5: The IS-LM Model. The IS curve (goods market) and LM curve (money market) intersect at equilibrium output Y* and interest rate i*.*
+
+
 The IS curve maps all combinations of output (Y) and the interest rate (i) at which the **goods market is in equilibrium** (planned expenditure equals output). It is derived by embedding the interest-sensitive investment function into the Keynesian cross.
 
 **Setup.** Introduce I = Ī − bi (from M13.L03) into the Keynesian cross:

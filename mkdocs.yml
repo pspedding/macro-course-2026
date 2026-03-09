@@ -26,6 +26,14 @@ theme:
 plugins:
   - search
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji
+  - attr_list
+  - md_in_html
+
 nav:
   - Home: index.md
   - "Module 01 — Introduction to Macroeconomics; Measuring Macroeconomic Performance":
@@ -160,3 +168,23 @@ nav:
     - "Currency Crises and Speculative Attacks": modules/module-21/M21.L03-currency-crises-speculative-attacks.md
     - "International Policy Coordination and Global Imbalances": modules/module-21/M21.L04-international-policy-coordination.md
     - "Synthesis — Australia as an Open Economy": modules/module-21/M21.L05-synthesis-australia-open-economy.md
+  - "📝 Quizzes":
+    - "Quiz Overview": quizzes/index.md
+    - "M01 — Introduction to Macroeconomics": quizzes/module-01-quiz.md
+    - "M02 — Measuring the Price Level and Inflation": quizzes/module-02-quiz.md
+    - "M03 — Unemployment and the Labour Market": quizzes/module-03-quiz.md
+    - "M04 — The Basic Keynesian Model": quizzes/module-04-quiz.md
+    - "M05 — Fiscal Policy, Money and the Reserve Bank": quizzes/module-05-quiz.md
+    - "M06 — The Reserve Bank and Monetary Policy": quizzes/module-06-quiz.md
+    - "M07 — Aggregate Demand and Aggregate Supply": quizzes/module-07-quiz.md
+    - "M08 — Introduction to Economic Growth": quizzes/module-08-quiz.md
+    - "M09 — Savings, Capital Formation and Growth": quizzes/module-09-quiz.md
+    - "M10 — Exchange Rates and the Open Economy": quizzes/module-10-quiz.md
+    - "M11 — The Balance of Payments": quizzes/module-11-quiz.md
+    - "M12 — Financial Crises": quizzes/module-12-quiz.md
+    - "M13 — National Accounting and Fiscal Policy": quizzes/module-13-quiz.md
+    - "M14 — The IS-LM Model Part I": quizzes/module-14-quiz.md
+    - "M15 — The IS-LM Model Part II": quizzes/module-15-quiz.md
+    - "M16 — The Labour Market and Phillips Curve": quizzes/module-16-quiz.md
+    - "M17 — The IS-LM-PC Model": quizzes/module-17-quiz.md
+    - "M18 — Economic Growth: The Solow Model": quizzes/module-18-quiz.md
