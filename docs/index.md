@@ -41,3 +41,4 @@ This course covers introductory and intermediate macroeconomics following the st
 | [M19](modules/module-19/M19.L01-beyond-solow.md) | Economic Growth Part II: Endogenous Growth and Development | 5 |
 | [M20](modules/module-20/M20.L01-mundell-fleming-model.md) | Open Economy Macroeconomics Part I: Mundell-Fleming | 6 |
 | [M21](modules/module-21/M21.L01-current-account-intertemporal.md) | Open Economy Macroeconomics Part II: Synthesis | 5 |
+| [📝 Quizzes](quizzes/) | 475 practice questions across all 18 modules — multiple choice, calculation, and short answer | 18 modules |
