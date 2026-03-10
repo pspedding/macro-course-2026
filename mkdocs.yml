@@ -37,6 +37,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - "📊 Key Diagrams": diagrams.md
+  - "🃏 Flashcards": flashcards.md
   - "Module 01 — Introduction to Macroeconomics; Measuring Macroeconomic Performance":
     - "What is Macroeconomics? Scope and Key Questions": modules/module-01/M01.L01-what-is-macroeconomics.md
     - "GDP — Definition and the Expenditure Approach": modules/module-01/M01.L02-gdp-expenditure-approach.md
