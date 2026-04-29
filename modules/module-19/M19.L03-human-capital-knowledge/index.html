@@ -6153,9 +6153,9 @@
 <p><strong>Human capital</strong> (<em>h</em>) — the skills, education, and health embodied in workers — is <em>rival</em>: doubling the number of workers doubles the productive capacity, but each worker's knowledge is theirs alone.</p>
 <p><strong>Ideas and knowledge</strong> (<em>A</em>) are <em>non-rival</em>: once discovered, the same idea can be deployed across millions of firms. This creates <strong>increasing returns at the social level</strong>: doubling <em>K</em>, <em>L</em>, and <em>A</em> more than doubles output because <em>A</em> is used everywhere simultaneously.</p>
 <p><strong>Romer (1990) model.</strong> Output is produced by:</p>
-<p>$$Y = K^\alpha (h \cdot A \cdot L_Y)^{1-\alpha}$$</p>
+<div class="arithmatex">\[Y = K^\alpha (h \cdot A \cdot L_Y)^{1-\alpha}\]</div>
 <p>where <em>h</em> = human capital per worker, <em>A</em> = stock of ideas, <em>L_Y</em> = workers in production. A separate R&amp;D sector produces new ideas:</p>
-<p>$$\dot{A} = \delta_A \cdot h \cdot L_A \cdot A$$</p>
+<div class="arithmatex">\[\dot{A} = \delta_A \cdot h \cdot L_A \cdot A\]</div>
 <p>where <em>L_A</em> = researchers, <em>δ_A</em> = R&amp;D productivity. The key feature is that existing ideas (<em>A</em>) make new ideas easier to find — <strong>ideas beget ideas</strong>. This drives sustained growth without any exogenous technology assumption.</p>
 <p><strong>Long-run growth rate.</strong> In the balanced growth path, g_A (and hence g_Y/L) depends on population size, human capital, and R&amp;D productivity — all <em>endogenous</em> policy levers.</p>
 <p><strong>Knowledge spillovers and market failure.</strong> Because ideas are non-rival, private R&amp;D generates positive externalities: a firm cannot capture all the value of its innovations. Result: the market <em>underproduces</em> ideas relative to the social optimum. This justifies R&amp;D subsidies, patent systems, and public funding of basic research.</p>
@@ -6163,27 +6163,27 @@
 <p><strong>Notation:</strong> <em>K</em> = capital; <em>h</em> = human capital per worker; <em>A</em> = stock of ideas/knowledge; <em>L_Y</em> = production workers; <em>L_A</em> = researchers; <em>L</em> = total labour force (L_Y + L_A); <em>δ_A</em> = R&amp;D productivity; <em>α</em> = capital share in production.</p>
 <h2 id="worked-example">Worked Example</h2>
 <p><strong>Question:</strong> In a simplified Romer-type economy, the idea production equation is:</p>
-<p>$$\dot{A} = \delta_A \cdot h \cdot L_A \cdot A$$</p>
+<div class="arithmatex">\[\dot{A} = \delta_A \cdot h \cdot L_A \cdot A\]</div>
 <p>Suppose <em>δ_A</em> = 0.002, <em>h</em> = 10 (years of tertiary education equivalent), <em>L_A</em> = 50,000 researchers, and current <em>A</em> = 1,000,000 ideas.</p>
 <p>(a) Calculate the number of new ideas produced per period (Ȧ).</p>
 <p>(b) Calculate the growth rate of ideas g_A = Ȧ/A.</p>
 <p>(c) If human capital <em>h</em> rises to 12 (a 20% increase via education expansion), what happens to g_A?</p>
 <p><strong>Step (a):</strong></p>
-<p>$$\dot{A} = \delta_A \cdot h \cdot L_A \cdot A$$
+<div class="arithmatex">\[\dot{A} = \delta_A \cdot h \cdot L_A \cdot A$$
 $$\dot{A} = 0.002 \times 10 \times 50{,}000 \times 1{,}000{,}000$$
-$$\dot{A} = 0.002 \times 10 \times 50{,}000{,}000{,}000$$</p>
+$$\dot{A} = 0.002 \times 10 \times 50{,}000{,}000{,}000\]</div>
 <p>Let us simplify step-by-step:
 - 0.002 × 10 = 0.02
 - 0.02 × 50,000 = 1,000
 - 1,000 × 1,000,000 = <strong>1,000,000,000 new ideas per period</strong></p>
 <p><strong>Step (b):</strong></p>
-<p>$$g_A = \frac{\dot{A}}{A} = \frac{1{,}000{,}000{,}000}{1{,}000{,}000} = 1{,}000 = \delta_A \cdot h \cdot L_A$$</p>
+<div class="arithmatex">\[g_A = \frac{\dot{A}}{A} = \frac{1{,}000{,}000{,}000}{1{,}000{,}000} = 1{,}000 = \delta_A \cdot h \cdot L_A\]</div>
 <p>More usefully: g_A = δ_A × h × L_A (the A terms cancel). With L_A = 50,000, the growth rate per period is very large — this is an artefact of stylised units. For cleaner pedagogical numbers, rescale to <em>L_A</em> = 500 researchers (same proportionality, smaller values):</p>
-<p>$$g_A = 0.002 \times 10 \times 500 = \mathbf{10 = 1000\%}$$</p>
+<div class="arithmatex">\[g_A = 0.002 \times 10 \times 500 = \mathbf{10 = 1000\%}\]</div>
 <p>Clearly in this illustrative example the numbers are stylised; the key is the <strong>proportionality</strong>: g_A = δ_A × h × L_A.</p>
 <p><strong>Step (c) — Effect of rising h:</strong></p>
-<p>$$g_A^{new} = 0.002 \times 12 \times 500 = 12$$</p>
-<p>$$\Delta g_A = 12 - 10 = 2 \quad \Rightarrow \quad \text{20\% rise in } h \text{ → 20\% rise in } g_A$$</p>
+<div class="arithmatex">\[g_A^{new} = 0.002 \times 12 \times 500 = 12\]</div>
+<div class="arithmatex">\[\Delta g_A = 12 - 10 = 2 \quad \Rightarrow \quad \text{20\% rise in } h \text{ → 20\% rise in } g_A\]</div>
 <p>This is a <em>growth effect</em>: more human capital permanently raises the rate of idea creation and hence the long-run output growth rate.</p>
 <h2 id="common-misconception">Common Misconception</h2>
 <p><strong>Misconception:</strong> "Human capital and knowledge are the same thing, so expanding education always increases long-run growth proportionally."</p>
@@ -6264,6 +6264,10 @@ $$\dot{A} = 0.002 \times 10 \times 50{,}000{,}000{,}000$$</p>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

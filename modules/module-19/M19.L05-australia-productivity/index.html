@@ -6147,7 +6147,7 @@
 <h2 id="explanation">Explanation</h2>
 <p><strong>Australia's productivity record.</strong> Multi-factor productivity (MFP, also called total factor productivity or TFP) measures output growth not explained by capital or labour input growth. Australia's MFP grew at approximately <strong>1.3% per annum</strong> in the 1990s reform decade (post-tariff liberalisation, enterprise bargaining, National Competition Policy), but slowed to approximately <strong>0.8% per annum</strong> post-2004 (Productivity Commission 2023). This 0.5 percentage point slowdown compounds significantly over decades.</p>
 <p><strong>Growth accounting framework.</strong> Output growth decomposes as:</p>
-<p>$$\frac{\dot{Y}}{Y} = \alpha \frac{\dot{K}}{K} + (1-\alpha)\frac{\dot{L}}{L} + \underbrace{\frac{\dot{A}}{A}}_{\text{MFP growth}}$$</p>
+<div class="arithmatex">\[\frac{\dot{Y}}{Y} = \alpha \frac{\dot{K}}{K} + (1-\alpha)\frac{\dot{L}}{L} + \underbrace{\frac{\dot{A}}{A}}_{\text{MFP growth}}\]</div>
 <p>where <em>α</em> ≈ 0.35 for Australia (capital's share of income). A fall in MFP growth reduces GDP per capita growth directly.</p>
 <p><strong>Causes of the slowdown:</strong></p>
 <ol>
@@ -6169,18 +6169,18 @@
 <h2 id="worked-example">Worked Example</h2>
 <p><strong>Question:</strong> Use growth accounting to assess the impact of a 0.5 percentage point fall in MFP growth on GDP per capita growth. Assume capital growth = 2.5%, labour growth = 1.5%, <em>α</em> = 0.35, and population growth = 1.2%. Starting MFP growth = 1.3% p.a.</p>
 <p><strong>Step 1 — Calculate baseline GDP growth.</strong></p>
-<p>$$\frac{\dot{Y}}{Y} = \alpha \frac{\dot{K}}{K} + (1-\alpha)\frac{\dot{L}}{L} + \frac{\dot{A}}{A}$$</p>
-<p>$$\frac{\dot{Y}}{Y} = 0.35 \times 2.5\% + 0.65 \times 1.5\% + 1.3\%$$</p>
-<p>$$= 0.875\% + 0.975\% + 1.3\%$$</p>
-<p>$$= 3.15\%$$</p>
+<div class="arithmatex">\[\frac{\dot{Y}}{Y} = \alpha \frac{\dot{K}}{K} + (1-\alpha)\frac{\dot{L}}{L} + \frac{\dot{A}}{A}\]</div>
+<div class="arithmatex">\[\frac{\dot{Y}}{Y} = 0.35 \times 2.5\% + 0.65 \times 1.5\% + 1.3\%\]</div>
+<div class="arithmatex">\[= 0.875\% + 0.975\% + 1.3\%\]</div>
+<div class="arithmatex">\[= 3.15\%\]</div>
 <p><strong>Step 2 — Calculate baseline GDP per capita growth.</strong></p>
-<p>$$\frac{\dot{y}}{y} = \frac{\dot{Y}}{Y} - \text{population growth} = 3.15\% - 1.2\% = \mathbf{1.95\%}$$</p>
+<div class="arithmatex">\[\frac{\dot{y}}{y} = \frac{\dot{Y}}{Y} - \text{population growth} = 3.15\% - 1.2\% = \mathbf{1.95\%}\]</div>
 <p><strong>Step 3 — Recalculate after MFP growth falls by 0.5pp.</strong></p>
 <p>New MFP growth = 1.3% − 0.5% = 0.8%</p>
-<p>$$\frac{\dot{Y}}{Y}^{new} = 0.875\% + 0.975\% + 0.8\% = 2.65\%$$</p>
-<p>$$\frac{\dot{y}}{y}^{new} = 2.65\% - 1.2\% = \mathbf{1.45\%}$$</p>
+<div class="arithmatex">\[\frac{\dot{Y}}{Y}^{new} = 0.875\% + 0.975\% + 0.8\% = 2.65\%\]</div>
+<div class="arithmatex">\[\frac{\dot{y}}{y}^{new} = 2.65\% - 1.2\% = \mathbf{1.45\%}\]</div>
 <p><strong>Step 4 — Measure the impact.</strong></p>
-<p>$$\Delta \frac{\dot{y}}{y} = 1.45\% - 1.95\% = -0.50\text{pp}$$</p>
+<div class="arithmatex">\[\Delta \frac{\dot{y}}{y} = 1.45\% - 1.95\% = -0.50\text{pp}\]</div>
 <p>GDP per capita growth falls by <strong>exactly 0.5 percentage points</strong> — the same magnitude as the MFP slowdown (MFP enters growth accounting one-for-one).</p>
 <p><strong>Step 5 — Compounding effect over 30 years.</strong></p>
 <table>
@@ -6285,6 +6285,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

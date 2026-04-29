@@ -6155,14 +6155,14 @@
 - <strong>CA</strong> = current account balance (positive = surplus)</p>
 <p><strong>Debt dynamics derivation:</strong></p>
 <p>The stock of external debt evolves as:</p>
-<p>$$D_{t+1} = (1 + r) D_t - CA_{t+1}$$</p>
+<div class="arithmatex">\[D_{t+1} = (1 + r) D_t - CA_{t+1}\]</div>
 <p>Each period, debt grows by interest (r·D) and falls by the CA surplus (or rises if CA is in deficit).</p>
 <p>Dividing both sides by Y_{t+1} = (1+g)·Y_t:</p>
-<p>$$\frac{D_{t+1}}{Y_{t+1}} = \frac{(1+r)}{(1+g)} \cdot \frac{D_t}{Y_t} - \frac{CA_{t+1}}{Y_{t+1}}$$</p>
+<div class="arithmatex">\[\frac{D_{t+1}}{Y_{t+1}} = \frac{(1+r)}{(1+g)} \cdot \frac{D_t}{Y_t} - \frac{CA_{t+1}}{Y_{t+1}}\]</div>
 <p>For small r and g, (1+r)/(1+g) ≈ 1 + (r−g). Therefore, the change in the debt ratio is:</p>
-<p>$$\Delta d \approx (r - g) \cdot d - \frac{CA}{Y}$$</p>
+<div class="arithmatex">\[\Delta d \approx (r - g) \cdot d - \frac{CA}{Y}\]</div>
 <p><strong>Stability condition:</strong> For d to remain stable (Δd = 0), we need:</p>
-<p>$$\frac{CA}{Y} \geq (r - g) \cdot d$$</p>
+<div class="arithmatex">\[\frac{CA}{Y} \geq (r - g) \cdot d\]</div>
 <p>This is the <strong>external debt stability condition</strong>. The required CA surplus (as % of GDP) equals the product of (r−g) and the current debt ratio.</p>
 <p><strong>Key intuition:</strong>
 - If r &gt; g: the debt ratio tends to grow on its own (interest compounds faster than GDP); a CA surplus is needed to offset this.
@@ -6199,18 +6199,18 @@ Australia's net foreign liability position is approximately <strong>55% of GDP</
 </tbody>
 </table>
 <p><strong>Step 1:</strong> Calculate the interest-growth differential.</p>
-<p>$$r - g = 0.045 - 0.025 = 0.020 \quad (2\%)$$</p>
+<div class="arithmatex">\[r - g = 0.045 - 0.025 = 0.020 \quad (2\%)\]</div>
 <p><strong>Step 2:</strong> Calculate the required CA surplus to stabilise the debt ratio.</p>
-<p>$$\left(\frac{CA}{Y}\right)^* = (r - g) \times d = 0.020 \times 0.55 = 0.011 = 1.1\%$$</p>
+<div class="arithmatex">\[\left(\frac{CA}{Y}\right)^* = (r - g) \times d = 0.020 \times 0.55 = 0.011 = 1.1\%\]</div>
 <p>Australia needs a CA surplus of <strong>at least 1.1% of GDP</strong> to keep its debt-to-GDP ratio from rising.</p>
 <p><strong>Step 3:</strong> Check against actual CA.</p>
-<p>$$\frac{CA}{Y} = +1.5\% &gt; \left(\frac{CA}{Y}\right)^* = 1.1\%$$</p>
+<div class="arithmatex">\[\frac{CA}{Y} = +1.5\% &gt; \left(\frac{CA}{Y}\right)^* = 1.1\%\]</div>
 <p><strong>Conclusion:</strong> Australia's actual CA surplus (1.5%) exceeds the required surplus (1.1%), so Δd &lt; 0 — the debt ratio is <strong>declining</strong>.</p>
 <p><strong>Step 4:</strong> Calculate the actual change in debt ratio.</p>
-<p>$$\Delta d = (r - g) \cdot d - \frac{CA}{Y} = 0.020 \times 0.55 - 0.015 = 0.011 - 0.015 = -0.004$$</p>
+<div class="arithmatex">\[\Delta d = (r - g) \cdot d - \frac{CA}{Y} = 0.020 \times 0.55 - 0.015 = 0.011 - 0.015 = -0.004\]</div>
 <p>The debt ratio falls by approximately <strong>0.4 percentage points per year</strong>.</p>
 <p><strong>Step 5:</strong> How long to reach 50% debt ratio from 55%?</p>
-<p>$$\text{Years} = \frac{55\% - 50\%}{0.4\% \text{ per year}} = 12.5 \text{ years}$$</p>
+<div class="arithmatex">\[\text{Years} = \frac{55\% - 50\%}{0.4\% \text{ per year}} = 12.5 \text{ years}\]</div>
 <p>At current settings, Australia would reach a 50% debt ratio in roughly <strong>12–13 years</strong> — assuming r, g, and CA remain constant.</p>
 <h2 id="common-misconception">Common Misconception</h2>
 <p><strong>Misconception:</strong> As long as a country can pay the interest on its debt, the debt is sustainable.</p>
@@ -6292,6 +6292,10 @@ Australia's net foreign liability position is approximately <strong>55% of GDP</
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

@@ -6147,14 +6147,14 @@
 <h2 id="explanation">Explanation</h2>
 <p>The Solow model generates <strong>diminishing returns to capital</strong>: as <em>K</em> rises, each additional unit of capital adds less to output (∂²Y/∂K² &lt; 0). This is why growth eventually stops at a steady state. But real-world economies have sustained per-capita growth for centuries. Where does it come from?</p>
 <p><strong>The AK model</strong> provides the simplest endogenous growth framework. Replace the Cobb-Douglas production function with:</p>
-<p>$$Y = AK$$</p>
+<div class="arithmatex">\[Y = AK\]</div>
 <p>where <em>A</em> is a constant (technology parameter) and <em>K</em> is <strong>broadly defined capital</strong> — encompassing physical capital, human capital, and knowledge. Because α = 1 (constant returns to <em>K</em>), there are no diminishing returns and growth can persist indefinitely.</p>
 <p><strong>Deriving the growth rate.</strong> Capital accumulates as:</p>
-<p>$$\dot{K} = sY - \delta K = sAK - \delta K$$</p>
+<div class="arithmatex">\[\dot{K} = sY - \delta K = sAK - \delta K\]</div>
 <p>Dividing both sides by <em>K</em>:</p>
-<p>$$\frac{\dot{K}}{K} = sA - \delta$$</p>
+<div class="arithmatex">\[\frac{\dot{K}}{K} = sA - \delta\]</div>
 <p>Since <em>Y</em> = <em>AK</em>, the growth rate of output equals the growth rate of capital:</p>
-<p>$$g_Y = sA - \delta$$</p>
+<div class="arithmatex">\[g_Y = sA - \delta\]</div>
 <p><strong>Key implication — growth effect vs. level effect.</strong> In the Solow model, a rise in <em>s</em> raises the <em>level</em> of steady-state income permanently but does not change the <em>long-run growth rate</em> (which is tied to exogenous technology growth <em>g</em>). In the AK model, a rise in <em>s</em> raises the <em>permanent growth rate</em> g_Y = sA − δ. This is a <strong>growth effect</strong>, not just a level effect.</p>
 <p><strong>Intuition.</strong> Broadly defined capital (physical + human + knowledge) does not suffer diminishing returns because: (i) human capital complements physical capital; (ii) knowledge is non-rival and generates spillovers. Even as any single firm's physical capital depreciates, the aggregate stock of ideas keeps expanding, preventing the MPK from falling to zero.</p>
 <p><strong>Australian policy relevance.</strong> If the AK model is correct, policies that increase <em>s</em> (compulsory superannuation, infrastructure investment) or <em>A</em> (R&amp;D subsidies, education quality) have permanent growth effects — not just temporary boosts. This motivates Australia's R&amp;D tax incentives and Productivity Commission recommendations on human capital investment.</p>
@@ -6162,16 +6162,16 @@
 <h2 id="worked-example">Worked Example</h2>
 <p><strong>Question:</strong> Calculate the steady-state growth rate g_Y for two scenarios: (a) <em>s</em> = 0.30, <em>A</em> = 0.15, <em>δ</em> = 0.05; (b) <em>s</em> = 0.40, <em>A</em> = 0.15, <em>δ</em> = 0.05.</p>
 <p><strong>Scenario (a):</strong></p>
-<p>$$g_Y = sA - \delta$$
+<div class="arithmatex">\[g_Y = sA - \delta$$
 $$g_Y = 0.30 \times 0.15 - 0.05$$
 $$g_Y = 0.045 - 0.05$$
-$$g_Y = -0.005 = -0.5\%$$</p>
+$$g_Y = -0.005 = -0.5\%\]</div>
 <p>A negative growth rate means capital and output are <em>shrinking</em> over time. With <em>s</em> = 0.30 and <em>A</em> = 0.15, investment (sAK = 0.045K) is insufficient to cover depreciation (δK = 0.05K). The economy contracts.</p>
 <p><strong>Scenario (b):</strong></p>
-<p>$$g_Y = sA - \delta$$
+<div class="arithmatex">\[g_Y = sA - \delta$$
 $$g_Y = 0.40 \times 0.15 - 0.05$$
 $$g_Y = 0.060 - 0.05$$
-$$g_Y = 0.010 = 1.0\%$$</p>
+$$g_Y = 0.010 = 1.0\%\]</div>
 <p>By raising <em>s</em> from 0.30 to 0.40, the economy now achieves <strong>1% sustained per-capita growth</strong>. The extra savings fund enough investment (0.06K) to cover depreciation (0.05K) <em>and</em> net capital accumulation.</p>
 <p><strong>Comparison with Solow.</strong> In a Solow model calibrated with these same parameters, a rise in <em>s</em> from 0.30 to 0.40 would raise the steady-state <em>level</em> of output per worker but eventually return the growth rate to the exogenous rate <em>g</em> (e.g., 2%). In the AK model, the savings rate determines the growth rate <em>permanently</em>.</p>
 <p><strong>Break-even savings rate</strong> (where g_Y = 0): s = δ/A = 0.05/0.15 = 0.333 = 33.3%. Below this, the economy contracts; above it, it grows sustainably.</p>
@@ -6256,6 +6256,10 @@ $$g_Y = 0.010 = 1.0\%$$</p>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

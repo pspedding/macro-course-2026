@@ -6147,16 +6147,16 @@
 <hr />
 <h2 id="explanation">Explanation</h2>
 <p>Starting from the equilibrium condition derived in M13.L02:</p>
-<p>$$Y^* = \frac{a - b\bar{T} + \bar{I} + \bar{G} + \bar{X}}{1 - b + m}$$</p>
+<div class="arithmatex">\[Y^* = \frac{a - b\bar{T} + \bar{I} + \bar{G} + \bar{X}}{1 - b + m}\]</div>
 <p><strong>Government spending multiplier (k_G):</strong> Differentiate with respect to Ḡ, holding all else constant:</p>
-<p>$$k_G = \frac{\partial Y^*}{\partial \bar{G}} = \frac{1}{1 - b + m}$$</p>
+<div class="arithmatex">\[k_G = \frac{\partial Y^*}{\partial \bar{G}} = \frac{1}{1 - b + m}\]</div>
 <p>With b = 0.8, m = 0.1: k_G = 1/0.3 ≈ <strong>3.33</strong>.</p>
 <p><strong>Tax multiplier (k_T):</strong> Differentiate with respect to T̄:</p>
-<p>$$k_T = \frac{\partial Y^*}{\partial \bar{T}} = \frac{-b}{1 - b + m}$$</p>
+<div class="arithmatex">\[k_T = \frac{\partial Y^*}{\partial \bar{T}} = \frac{-b}{1 - b + m}\]</div>
 <p>With b = 0.8, m = 0.1: k_T = −0.8/0.3 ≈ <strong>−2.67</strong>.</p>
 <p>The tax multiplier is smaller in absolute value than the spending multiplier because a tax cut of $1 raises disposable income by $1, but households save a fraction (1 − b) — only b dollars flow into consumption. A spending increase of $1 enters the expenditure stream directly.</p>
 <p><strong>Balanced Budget Multiplier (BBM).</strong> If ΔḠ = ΔT̄ = ΔB (equal increase in spending and taxes):</p>
-<p>$$\Delta Y = k_G \cdot \Delta B + k_T \cdot \Delta B = \left(\frac{1}{1-b+m} + \frac{-b}{1-b+m}\right)\Delta B = \frac{1-b}{1-b+m} \cdot \Delta B$$</p>
+<div class="arithmatex">\[\Delta Y = k_G \cdot \Delta B + k_T \cdot \Delta B = \left(\frac{1}{1-b+m} + \frac{-b}{1-b+m}\right)\Delta B = \frac{1-b}{1-b+m} \cdot \Delta B\]</div>
 <ul>
 <li><strong>Closed economy</strong> (m = 0): BBM = (1 − b)/(1 − b) = <strong>1 exactly</strong> (Haavelmo theorem).</li>
 <li><strong>Open economy</strong> (m &gt; 0): BBM = (1 − b)/(1 − b + m) &lt; 1. With b = 0.8, m = 0.1: BBM = 0.2/0.3 = <strong>0.67</strong> — import leakage reduces the balanced budget multiplier below unity.</li>
@@ -6192,7 +6192,7 @@
 <ol>
 <li>
 <p>Why is the government spending multiplier always larger in absolute value than the tax multiplier? Explain the mechanism in terms of how each policy instrument enters the expenditure stream.
-   → <strong>Answer:</strong> A $1 increase in G enters aggregate expenditure directly and fully ($1 of spending). A $1 tax cut raises disposable income by $1, but consumers save a fraction (1 − b) and only spend b dollars domestically (and a fraction m of that is on imports). So the tax cut generates less first-round domestic spending than an equivalent direct expenditure increase. Formally: |k_G| = 1/(1 − b + m) &gt; b/(1 − b + m) = |k_T| since b &lt; 1.</p>
+   → <strong>Answer:</strong> A <span class="arithmatex">\(1 increase in G enters aggregate expenditure directly and fully (\)</span>1 of spending). A $1 tax cut raises disposable income by $1, but consumers save a fraction (1 − b) and only spend b dollars domestically (and a fraction m of that is on imports). So the tax cut generates less first-round domestic spending than an equivalent direct expenditure increase. Formally: |k_G| = 1/(1 − b + m) &gt; b/(1 − b + m) = |k_T| since b &lt; 1.</p>
 </li>
 <li>
 <p>With b = 0.75 and m = 0.05, calculate: (a) the government spending multiplier, (b) the tax multiplier, and (c) the balanced budget multiplier.
@@ -6207,7 +6207,7 @@
 </li>
 <li>
 <p>During Australia's COVID-19 response, the government deployed approximately $300bn in fiscal stimulus. If the Treasury's mid-range fiscal multiplier of 0.9 applies, what is the estimated total impact on GDP? Why might the actual multiplier have been at the higher end of the 0.6–1.2 range during 2020?
-   → <strong>Answer:</strong> Estimated GDP impact = $300bn × 0.9 = <strong>$270bn</strong>. The multiplier was likely at the higher end in 2020 because: (1) there was substantial spare capacity in the economy (deep recession), so extra spending did not crowd out private investment; (2) the RBA held interest rates near zero (cash rate at 0.1%), preventing monetary offset (crowding out via higher rates); (3) the stimulus was targeted at low-income households with high MPCs (JobSeeker, supplemented welfare) who spend a larger fraction of transfers. These conditions align with scenarios where Keynesian multipliers are maximised.</p>
+   → <strong>Answer:</strong> Estimated GDP impact = <span class="arithmatex">\(300bn × 0.9 = **\)</span>270bn**. The multiplier was likely at the higher end in 2020 because: (1) there was substantial spare capacity in the economy (deep recession), so extra spending did not crowd out private investment; (2) the RBA held interest rates near zero (cash rate at 0.1%), preventing monetary offset (crowding out via higher rates); (3) the stimulus was targeted at low-income households with high MPCs (JobSeeker, supplemented welfare) who spend a larger fraction of transfers. These conditions align with scenarios where Keynesian multipliers are maximised.</p>
 </li>
 </ol>
 <h2 id="further-resources">Further Resources</h2>
@@ -6269,6 +6269,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

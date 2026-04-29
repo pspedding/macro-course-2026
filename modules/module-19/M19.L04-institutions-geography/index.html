@@ -6161,18 +6161,18 @@ Secure property rights, rule of law, and constraints on executive power are the 
 <p><strong>Problem:</strong> Regressing current income on current institutional quality (e.g., "protection against expropriation") gives a biased estimate because richer countries may simply <em>afford</em> better institutions (reverse causality), and omitted variables (culture, geography) affect both.</p>
 <p><strong>AJR's solution — two stages:</strong></p>
 <p><em>Stage 1</em> — Regress current institutional quality (INST) on settler mortality (MORT):</p>
-<p>$$\widehat{INST}_i = \hat{\gamma}_0 + \hat{\gamma}_1 \ln(MORT_i) + \hat{\varepsilon}_i$$</p>
+<div class="arithmatex">\[\widehat{INST}_i = \hat{\gamma}_0 + \hat{\gamma}_1 \ln(MORT_i) + \hat{\varepsilon}_i\]</div>
 <p>Empirical finding: γ̂₁ &lt; 0 (higher settler mortality → worse institutions today). F-statistic &gt;&gt; 10 (strong instrument).</p>
 <p><em>Stage 2</em> — Regress log income per capita (ln Y) on <em>predicted</em> institutional quality:</p>
-<p>$$\ln(Y_i) = \hat{\beta}_0 + \hat{\beta}_1 \widehat{INST}_i + \hat{u}_i$$</p>
+<div class="arithmatex">\[\ln(Y_i) = \hat{\beta}_0 + \hat{\beta}_1 \widehat{INST}_i + \hat{u}_i\]</div>
 <p>Empirical finding: β̂₁ ≈ 0.94 (one-unit improvement in institutional score → ~94% higher per-capita income). This is substantially larger than the OLS estimate, suggesting OLS <em>underestimates</em> the true institutional effect due to measurement error in institutions.</p>
 <p><strong>Numerical illustration:</strong></p>
 <p>Suppose two hypothetical colonies:
 - Colony A: ln(settler mortality) = 3.0 (low mortality); predicted INST = 8.5 / 10
 - Colony B: ln(settler mortality) = 6.0 (high mortality); predicted INST = 5.0 / 10</p>
 <p>Using β̂₁ = 0.94:</p>
-<p>$$\ln(Y_A) - \ln(Y_B) = 0.94 \times (8.5 - 5.0) = 0.94 \times 3.5 = 3.29$$</p>
-<p>$$\frac{Y_A}{Y_B} = e^{3.29} \approx 26.8$$</p>
+<div class="arithmatex">\[\ln(Y_A) - \ln(Y_B) = 0.94 \times (8.5 - 5.0) = 0.94 \times 3.5 = 3.29\]</div>
+<div class="arithmatex">\[\frac{Y_A}{Y_B} = e^{3.29} \approx 26.8\]</div>
 <p>The institutions difference alone — instrumented via settler mortality — predicts a <strong>27-fold income gap</strong>. This is close in magnitude to observed gaps between high- and low-institution former colonies.</p>
 <h2 id="common-misconception">Common Misconception</h2>
 <p><strong>Misconception:</strong> "Geography determines institutions, so controlling for geography eliminates any independent effect of institutions on income."</p>
@@ -6257,6 +6257,10 @@ Secure property rights, rule of law, and constraints on executive power are the 
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

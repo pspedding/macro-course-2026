@@ -6184,7 +6184,7 @@
 <li>Rational speculators attack <em>before</em> reserves hit zero — at the <strong>critical threshold</strong> T* when it becomes profitable to attack.</li>
 </ol>
 <p>The key formula for the reserve depletion timeline is:</p>
-<p>$$T^* = \frac{R_0 - R_{\min}}{\mu}$$</p>
+<div class="arithmatex">\[T^* = \frac{R_0 - R_{\min}}{\mu}\]</div>
 <p>where <strong>R₀</strong> = initial reserves, <strong>R_min</strong> = minimum viable reserve level, and <strong>μ</strong> = rate of reserve loss per period.</p>
 <p><strong>Asian Crisis (Thailand, 1997):</strong> The Thai baht was a classic first-generation crisis. Thailand ran large CA deficits (−8% GDP), maintained a dollar peg, and had a fragile banking sector with unhedged foreign borrowing. The Bank of Thailand's reserves depleted rapidly as it defended the peg. In July 1997, the baht collapsed, triggering contagion across Indonesia, South Korea, Malaysia, and the Philippines.</p>
 <h3 id="second-generation-model-obstfeld-1994">Second-Generation Model (Obstfeld, 1994)</h3>
@@ -6220,12 +6220,12 @@
 - Minimum viable reserve level: R_min = USD 5 billion
 - Rate of reserve loss (CA deficit drain + forward market interventions): μ = USD 2 billion per month</p>
 <p><strong>Step 1:</strong> Calculate the reserve buffer above the minimum.</p>
-<p>$$R_0 - R_{\min} = 30 - 5 = 25 \text{ billion USD}$$</p>
+<div class="arithmatex">\[R_0 - R_{\min} = 30 - 5 = 25 \text{ billion USD}\]</div>
 <p><strong>Step 2:</strong> Calculate the critical threshold time T*.</p>
-<p>$$T^* = \frac{R_0 - R_{\min}}{\mu} = \frac{25}{2} = 12.5 \text{ months}$$</p>
+<div class="arithmatex">\[T^* = \frac{R_0 - R_{\min}}{\mu} = \frac{25}{2} = 12.5 \text{ months}\]</div>
 <p><strong>Step 3:</strong> Interpret. Without a speculative attack, reserves would last <strong>12.5 months</strong>. However, rational speculators attack <em>before</em> T*, anticipating reserve exhaustion. An attack is profitable when the expected devaluation gain exceeds the carry cost of borrowing domestic currency to short it.</p>
 <p><strong>Step 4:</strong> Speculative attack condition. An attack occurs when the "shadow exchange rate" (what the rate would be if the peg collapsed today) exceeds the fixed rate:</p>
-<p>$$e_{\text{shadow}} &gt; e_{\text{fixed}}$$</p>
+<div class="arithmatex">\[e_{\text{shadow}} &gt; e_{\text{fixed}}\]</div>
 <p>In Thailand's case, the shadow rate showed the baht was overvalued by approximately 15–20%, making attack profitable at any reasonable borrowing cost.</p>
 <p><strong>Step 5:</strong> The actual July 1997 attack occurred after Thailand exhausted reserves through <em>off-balance-sheet</em> forward market intervention — reserves were far lower than publicly reported, making the fundamentals worse than they appeared and T* effectively zero.</p>
 <h2 id="common-misconception">Common Misconception</h2>
@@ -6310,6 +6310,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

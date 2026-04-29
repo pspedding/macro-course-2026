@@ -6166,8 +6166,8 @@
 </ul>
 <p>Over time, prices gradually rise (sticky adjustment), real money supply falls back, i rises back to i*, and the exchange rate <em>appreciates</em> from its overshooting trough toward the new long-run level.</p>
 <p><strong>UIP condition (key equation):</strong></p>
-<p>$$i = i^* + \frac{\dot{e}^e}{e}$$</p>
-<p>where $\dot{e}^e/e$ = expected rate of depreciation. If i &lt; i*, then $\dot{e}^e/e &lt; 0$ (expected appreciation) → current <em>e</em> must be above its long-run value (i.e., the currency has overshot into depreciation territory).</p>
+<div class="arithmatex">\[i = i^* + \frac{\dot{e}^e}{e}\]</div>
+<p>where <span class="arithmatex">\(\dot{e}^e/e\)</span> = expected rate of depreciation. If i &lt; i*, then <span class="arithmatex">\(\dot{e}^e/e &lt; 0\)</span> (expected appreciation) → current <em>e</em> must be above its long-run value (i.e., the currency has overshot into depreciation territory).</p>
 <p><strong>Australian evidence.</strong> The 2014–15 iron ore price crash saw AUD fall from ~USD 0.95 (early 2013) to ~USD 0.70 (early 2016) — a 26% depreciation. PPP estimates suggested the AUD's fair value around USD 0.75–0.80. The additional 5–10% depreciation below fair value is consistent with overshooting. During 2022, the AUD fell to ~USD 0.63 despite strong commodity prices — partly due to USD strength (global dollar tightening) and overshooting of USD.</p>
 <p><strong>Notation:</strong>
 - <em>e</em> = nominal exchange rate (units of AUD per USD, or similar; higher = more depreciated domestic currency)
@@ -6175,7 +6175,7 @@
 - <em>e_SR</em> = short-run exchange rate (overshooting position)
 - <em>M</em> = money supply; <em>P</em> = price level; <em>M/P</em> = real money supply
 - <em>i</em> = domestic interest rate; <em>i*</em> = world interest rate
-- $\dot{e}^e/e$ = expected rate of change of exchange rate (UIP)</p>
+- <span class="arithmatex">\(\dot{e}^e/e\)</span> = expected rate of change of exchange rate (UIP)</p>
 <h2 id="worked-example">Worked Example</h2>
 <p><strong>Question:</strong> The Australian money supply increases permanently by 10%. Show algebraically:
 (a) The long-run effect on the exchange rate (PPP).
@@ -6184,27 +6184,27 @@
 <p><strong>Step (a) — Long-run PPP effect.</strong></p>
 <p>PPP: P = eP* (where P* = foreign price level, assumed constant)</p>
 <p>In the long run, neutrality of money: prices rise proportionally to M:</p>
-<p>$$\frac{\Delta P}{P} = \frac{\Delta M}{M} = 10\%$$</p>
-<p>By PPP: $\frac{\Delta e}{e} = \frac{\Delta P}{P} - \frac{\Delta P^<em>}{P^</em>} = 10\% - 0\% = \mathbf{10\%}$</p>
+<div class="arithmatex">\[\frac{\Delta P}{P} = \frac{\Delta M}{M} = 10\%\]</div>
+<p>By PPP: <span class="arithmatex">\(\frac{\Delta e}{e} = \frac{\Delta P}{P} - \frac{\Delta P^*}{P^*} = 10\% - 0\% = \mathbf{10\%}\)</span></p>
 <p>The exchange rate depreciates by <strong>10%</strong> in the long run.</p>
 <p><strong>Step (b) — Short-run overshooting logic.</strong></p>
 <p>In the short run, P is fixed. The money supply rises 10%, so real money M/P rises 10%.</p>
 <p>Money market equilibrium requires i to fall to absorb the higher real money supply. Let the fall in i be Δi.</p>
 <p>Using UIP: for investors to hold domestic assets at lower i, they need expected future <em>appreciation</em>:</p>
-<p>$$\Delta i = \frac{\dot{e}^e}{e} &lt; 0$$</p>
+<div class="arithmatex">\[\Delta i = \frac{\dot{e}^e}{e} &lt; 0\]</div>
 <p>meaning current <em>e</em> must have depreciated <em>more than its long-run value</em>, so it can appreciate back.</p>
-<p>Let the long-run exchange rate = e_LR (depreciated 10%). If current e = e_SR &gt; e_LR (more depreciated), then investors expect appreciation: $\dot{e}^e/e = (e_{LR} - e_{SR})/e_{SR} &lt; 0$.</p>
+<p>Let the long-run exchange rate = e_LR (depreciated 10%). If current e = e_SR &gt; e_LR (more depreciated), then investors expect appreciation: <span class="arithmatex">\(\dot{e}^e/e = (e_{LR} - e_{SR})/e_{SR} &lt; 0\)</span>.</p>
 <p><strong>Step (c) — Quantify the overshoot.</strong></p>
 <p>Money market equilibrium in the short run (with P fixed, M/P rises 10%):</p>
 <p>By the interest semi-elasticity: a 10% rise in M/P requires i to fall by:</p>
-<p>$$\Delta i = -\frac{\Delta(M/P)/（M/P)}{\lambda} = -\frac{10\%}{5} = -2\text{pp}$$</p>
+<div class="arithmatex">\[\Delta i = -\frac{\Delta(M/P)/（M/P)}{\lambda} = -\frac{10\%}{5} = -2\text{pp}\]</div>
 <p>So <em>i</em> falls by <strong>2 percentage points</strong> below <em>i*</em>.</p>
 <p>UIP then requires: expected appreciation = Δi = 2pp per period.</p>
 <p>If the speed of adjustment means the exchange rate fully adjusts back to e_LR over 5 periods, the annual expected appreciation rate = 2pp. The initial overshoot must be large enough that 2pp of appreciation per period brings e back to e_LR.</p>
 <p>If e_LR represents 10% depreciation from the original rate (call it e₀ = 1.0, so e_LR = 1.10), then:</p>
-<p>$$e_{SR} = e_{LR} \times \left(1 + \lambda \cdot |\Delta i|\right) = 1.10 \times (1 + 5 \times 0.02) = 1.10 \times 1.10 = 1.21$$</p>
+<div class="arithmatex">\[e_{SR} = e_{LR} \times \left(1 + \lambda \cdot |\Delta i|\right) = 1.10 \times (1 + 5 \times 0.02) = 1.10 \times 1.10 = 1.21\]</div>
 <p>Short-run overshoot: <strong>21% depreciation</strong> vs. long-run 10% depreciation.</p>
-<p>$$\text{Overshoot} = e_{SR} - e_{LR} = 1.21 - 1.10 = 0.11 \quad (11\text{pp above long-run})$$</p>
+<div class="arithmatex">\[\text{Overshoot} = e_{SR} - e_{LR} = 1.21 - 1.10 = 0.11 \quad (11\text{pp above long-run})\]</div>
 <p>The exchange rate overshoots its long-run value by <strong>11 percentage points</strong> — more than doubling the long-run impact in the short run.</p>
 <h2 id="common-misconception">Common Misconception</h2>
 <p><strong>Misconception:</strong> "If a country's money supply rises 10%, the exchange rate depreciates by exactly 10% — no more, no less."</p>
@@ -6285,6 +6285,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
