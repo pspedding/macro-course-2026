@@ -107,9 +107,62 @@ Substitute Y\* back into either IS or LM to solve for i\*.
 3. In the IS-LM model, suppose a negative demand shock (e.g., a fall in consumer confidence) reduces autonomous spending A by $100bn. Using the IS equation i = A/b_inv − [(1−b+m)/b_inv]Y, explain qualitatively (without full algebra) how the new equilibrium Y\* and i\* compare to the original, and what this implies for policy.
    → **Answer:** A fall in A shifts the IS curve leftward: at every income level, the interest rate consistent with goods market equilibrium is lower (less autonomous spending → lower Y needed at any i). The IS curve shifts left. Moving along the LM curve to the new intersection, both Y\* and i\* fall: output declines (recession) and the interest rate drops. The lower i provides a partial automatic offset (higher investment partially cushions the demand shock) — this is the "crowding in" effect in reverse. Policy implications: fiscal expansion (increase G or cut T) shifts IS rightward back toward the original position; or monetary expansion (increase M̄) shifts LM rightward, lowering i further and partially restoring Y via the investment channel. The appropriate mix depends on how interest-sensitive investment is (b_inv) and the fiscal multiplier magnitude.
 
+## Visual — IS-LM Equilibrium and a Negative Demand Shock
+
+<div style="overflow-x: auto; margin: 1rem 0;">
+<svg viewBox="0 0 1100 420" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .axis { stroke: #333; stroke-width: 2; }
+    .curve { fill: none; stroke-width: 3; }
+    .guide { stroke: #777; stroke-width: 1.5; stroke-dasharray: 6 5; }
+    .label { font: 16px Arial, sans-serif; fill: #222; }
+    .small { font: 13px Arial, sans-serif; fill: #444; }
+    .title { font: 18px Arial, sans-serif; font-weight: 700; fill: #222; }
+  </style>
+
+  <text x="550" y="28" text-anchor="middle" class="title">IS-LM equilibrium in (Y, i) space</text>
+  <line x1="90" y1="340" x2="1010" y2="340" class="axis" />
+  <line x1="90" y1="340" x2="90" y2="60" class="axis" />
+  <text x="550" y="390" text-anchor="middle" class="label">Output / income, Y</text>
+  <text x="35" y="205" transform="rotate(-90 35 205)" text-anchor="middle" class="label">Interest rate, i</text>
+
+  <line x1="170" y1="130" x2="760" y2="300" class="curve" stroke="#d62728" />
+  <line x1="270" y1="90" x2="860" y2="260" class="curve" stroke="#ff9896" />
+  <line x1="240" y1="300" x2="760" y2="110" class="curve" stroke="#1f77b4" />
+
+  <circle cx="566" cy="180" r="5" fill="#222" />
+  <circle cx="466" cy="216" r="5" fill="#222" />
+  <line x1="566" y1="180" x2="566" y2="340" class="guide" />
+  <line x1="90" y1="180" x2="566" y2="180" class="guide" />
+  <line x1="466" y1="216" x2="466" y2="340" class="guide" />
+  <line x1="90" y1="216" x2="466" y2="216" class="guide" />
+
+  <text x="640" y="305" class="label">IS: i = A/b_inv − [(1−b+m)/b_inv]Y</text>
+  <text x="705" y="262" class="small">IS′ after A falls</text>
+  <text x="635" y="110" class="label">LM: i = (k/h)Y − M̄/(Ph)</text>
+  <text x="576" y="174" class="label">E₀</text>
+  <text x="476" y="210" class="label">E₁</text>
+  <text x="547" y="360" class="small">Y₀</text>
+  <text x="447" y="360" class="small">Y₁</text>
+  <text x="64" y="186" class="small">i₀</text>
+  <text x="64" y="222" class="small">i₁</text>
+
+  <line x1="545" y1="195" x2="492" y2="210" stroke="#555" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="610" y="225" class="small">Negative demand shock shifts IS left:</text>
+  <text x="645" y="243" class="small">equilibrium Y and i both fall.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555" />
+    </marker>
+  </defs>
+</svg>
+</div>
+
+*Figure: The IS and LM curves intersect once, giving unique equilibrium output and interest rate. A negative demand shock reduces autonomous spending, shifts the IS curve left, and moves the economy to lower output and a lower interest rate.*
+
 ## Further Resources
 - 📺 **[Macroeconomics: The IS-LM Model](https://www.youtube.com/watch?v=e_3clidGpfE)** — Economics in Many Lessons (15 min)
 - 📺 **[Macroeconomics: The IS Curve](https://www.youtube.com/watch?v=g6aba0V6ifo)** — Economics in Many Lessons (15 min)
 - 📚 **[RBA — Monetary Policy Explainer](https://www.rba.gov.au/education/resources/explainers/monetary-policy.html)** — IS-LM equilibrium and its application to Australian monetary and fiscal policy analysis
 
-[VISUAL NEEDED: IS-LM diagram showing downward-sloping IS curve and upward-sloping LM curve in (Y, i) space, with equilibrium at the unique intersection point (Y*, i*). Label both curves with their equations. Show what happens when IS shifts left (negative demand shock): new intersection at lower Y* and lower i*.]

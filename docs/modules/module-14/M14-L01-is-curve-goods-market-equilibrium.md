@@ -105,9 +105,70 @@ A 1-unit increase in Y reduces i by 0.0006 percentage points; equivalently, a 1 
 3. During 2022–2023, the RBA raised the cash rate from 0.10% to 4.35% — a rise of 425 basis points. Using the IS framework, explain through which channels this would have reduced Australian GDP, and why the effect may have been larger than a simple model predicts.
    → **Answer:** Via the IS channel: higher i reduces investment (I = Ī − b_inv·i falls), shifting the economy up the IS curve (or equivalently, reducing autonomous expenditure, lowering Y* via the multiplier). Additional channels beyond the basic model: (1) **Mortgage cash flow:** Australia has a high proportion of variable-rate mortgages; rate rises rapidly increased mortgage repayments, directly reducing household disposable income and consumption — equivalent to a tax increase. (2) **Consumer confidence:** Rate rises signalled future tightening, reducing autonomous consumption a. (3) **Housing investment collapse:** Rising rates decimated new housing construction (dwelling investment fell ~15% in 2023). These amplifying channels made the RBA's tightening more powerful than the basic model's investment-only channel implies.
 
+## Visual — The IS Curve: Movements and Shifts
+
+<div style="overflow-x: auto; margin: 1rem 0;">
+<svg viewBox="0 0 1200 420" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .axis { stroke: #333; stroke-width: 2; }
+    .curve { fill: none; stroke-width: 3; }
+    .guide { stroke: #777; stroke-width: 1.5; stroke-dasharray: 6 5; }
+    .label { font: 16px Arial, sans-serif; fill: #222; }
+    .small { font: 13px Arial, sans-serif; fill: #444; }
+    .title { font: 18px Arial, sans-serif; font-weight: 700; fill: #222; }
+  </style>
+
+  <text x="300" y="28" text-anchor="middle" class="title">Movement along the IS curve</text>
+  <line x1="80" y1="340" x2="520" y2="340" class="axis" />
+  <line x1="80" y1="340" x2="80" y2="60" class="axis" />
+  <text x="300" y="388" text-anchor="middle" class="label">Output, Y</text>
+  <text x="28" y="205" transform="rotate(-90 28 205)" text-anchor="middle" class="label">Interest rate, i</text>
+  <line x1="140" y1="120" x2="470" y2="290" class="curve" stroke="#d62728" />
+  <circle cx="240" cy="171" r="5" fill="#222" />
+  <circle cx="360" cy="233" r="5" fill="#222" />
+  <line x1="240" y1="171" x2="240" y2="340" class="guide" />
+  <line x1="360" y1="233" x2="360" y2="340" class="guide" />
+  <line x1="80" y1="171" x2="240" y2="171" class="guide" />
+  <line x1="80" y1="233" x2="360" y2="233" class="guide" />
+  <text x="388" y="292" class="label">IS</text>
+  <text x="180" y="104" class="label">intercept = A/b_inv</text>
+  <text x="272" y="197" class="label">slope = −(1−b+m)/b_inv</text>
+  <text x="219" y="166" class="small">(Y₁, i₁)</text>
+  <text x="339" y="228" class="small">(Y₂, i₂)</text>
+  <line x1="252" y1="177" x2="347" y2="226" stroke="#555" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="130" y="314" class="small">Higher i reduces planned investment and lowers Y.</text>
+
+  <text x="895" y="28" text-anchor="middle" class="title">Fiscal expansion shifts IS right</text>
+  <line x1="670" y1="340" x2="1120" y2="340" class="axis" />
+  <line x1="670" y1="340" x2="670" y2="60" class="axis" />
+  <text x="895" y="388" text-anchor="middle" class="label">Output, Y</text>
+  <text x="618" y="205" transform="rotate(-90 618 205)" text-anchor="middle" class="label">Interest rate, i</text>
+  <line x1="730" y1="140" x2="1050" y2="300" class="curve" stroke="#d62728" />
+  <line x1="790" y1="110" x2="1110" y2="270" class="curve" stroke="#ff9896" />
+  <line x1="670" y1="205" x2="950" y2="205" class="guide" />
+  <circle cx="850" cy="205" r="5" fill="#222" />
+  <circle cx="910" cy="205" r="5" fill="#222" />
+  <line x1="850" y1="205" x2="850" y2="340" class="guide" />
+  <line x1="910" y1="205" x2="910" y2="340" class="guide" />
+  <text x="1000" y="300" class="label">IS₀</text>
+  <text x="1060" y="270" class="label">IS₁</text>
+  <text x="832" y="225" class="small">Y₀</text>
+  <text x="892" y="225" class="small">Y₁</text>
+  <line x1="860" y1="190" x2="900" y2="190" stroke="#555" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="760" y="156" class="small">ΔḠ &gt; 0 raises autonomous spending</text>
+  <text x="760" y="174" class="small">and shifts the IS curve right.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555" />
+    </marker>
+  </defs>
+</svg>
+</div>
+
+*Figure: The IS curve is downward sloping because higher interest rates reduce investment and equilibrium output. A fiscal expansion raises autonomous demand and shifts the whole IS curve to the right.*
+
 ## Further Resources
 - 📺 **[Macroeconomics: The IS Curve](https://www.youtube.com/watch?v=g6aba0V6ifo)** — Economics in Many Lessons (15 min)
 - 📺 **[Macroeconomics: The IS-LM Model](https://www.youtube.com/watch?v=e_3clidGpfE)** — Economics in Many Lessons (15 min)
 - 📚 **[RBA — Monetary Policy Explainer](https://www.rba.gov.au/education/resources/explainers/monetary-policy.html)** — Goods market equilibrium and how the IS curve underpins RBA modelling
-
-[VISUAL NEEDED: IS curve diagram in (Y, i) space showing the downward-sloping IS curve. Indicate the effect of a rise in i reducing Y* (movement along the curve), and separately show a rightward IS shift from a fiscal expansion (ΔḠ > 0). Label the slope −(1−b+m)/b_inv and the autonomous spending intercept A/b_inv.]

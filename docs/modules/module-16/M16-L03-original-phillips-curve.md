@@ -112,10 +112,57 @@ Policymakers can pick any point on this curve by adjusting aggregate demand.
 3. **Application:** In the 1960s, Australian unemployment averaged around 1.5–2%, significantly below the later NAIRU estimates of 4–5%. Using the Phillips curve framework, what would this imply about inflation during that decade, and is this consistent with what actually happened?
    → **Answer:** If *u_n* ≈ 5% and actual *u* ≈ 2%, then *u − u_n* = −3, and the Phillips curve predicts inflation well above baseline. Indeed, Australian CPI inflation averaged approximately 3–4% in the 1960s — elevated relative to the post-1990s period but manageable at the time. The stable relationship held for roughly a decade before the 1970s oil shocks and wage explosion broke it. This is consistent with the "Golden Age" of low unemployment and moderate inflation predicted by an unexploited Phillips curve trade-off.
 
+## Visual — The Original Phillips Curve
+
+<div style="overflow-x: auto; margin: 1rem 0;">
+<svg viewBox="0 0 1050 420" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .axis { stroke: #333; stroke-width: 2; }
+    .curve { fill: none; stroke-width: 3; }
+    .guide { stroke: #777; stroke-width: 1.5; stroke-dasharray: 6 5; }
+    .label { font: 16px Arial, sans-serif; fill: #222; }
+    .small { font: 13px Arial, sans-serif; fill: #444; }
+    .title { font: 18px Arial, sans-serif; font-weight: 700; fill: #222; }
+  </style>
+
+  <text x="525" y="28" text-anchor="middle" class="title">Original Phillips curve: short-run inflation-unemployment trade-off</text>
+  <line x1="90" y1="340" x2="980" y2="340" class="axis" />
+  <line x1="90" y1="340" x2="90" y2="60" class="axis" />
+  <text x="535" y="388" text-anchor="middle" class="label">Unemployment rate, u (%)</text>
+  <text x="35" y="200" transform="rotate(-90 35 200)" text-anchor="middle" class="label">Inflation, π (%)</text>
+
+  <path d="M 230 140 Q 400 205 610 245 Q 760 275 860 295" class="curve" stroke="#d62728" />
+  <line x1="490" y1="70" x2="490" y2="340" class="guide" />
+  <circle cx="330" cy="160" r="5" fill="#222" />
+  <circle cx="490" cy="205" r="5" fill="#222" />
+  <circle cx="650" cy="250" r="5" fill="#222" />
+
+  <text x="344" y="154" class="label">(3%, 4%)</text>
+  <text x="504" y="199" class="label">(5%, 3%)</text>
+  <text x="664" y="244" class="label">(7%, 2%)</text>
+  <text x="500" y="88" class="label">uₙ = 5%</text>
+  <text x="585" y="183" class="label">slope α = 0.5</text>
+  <text x="780" y="305" class="label">Phillips curve</text>
+
+  <line x1="680" y1="270" x2="360" y2="175" stroke="#555" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="675" y="170" class="small">Expansionary policy:</text>
+  <text x="675" y="188" class="small">move up/left to lower u, higher π</text>
+  <text x="675" y="220" class="small">Contractionary policy:</text>
+  <text x="675" y="238" class="small">move down/right to higher u, lower π</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555" />
+    </marker>
+  </defs>
+</svg>
+</div>
+
+*Figure: The original Phillips curve shows an apparent short-run trade-off between unemployment and inflation. Moving leftward along the curve lowers unemployment but raises inflation; the dashed vertical line marks the NAIRU at 5%.*
+
 ## Further Resources
 
 - 📺 **[The Phillips Curve – Inflation vs Unemployment](https://www.youtube.com/watch?v=55hpwVWwdnw)** — Enhance Tuition Economics (9 min)
 - 📺 **[Macro Problem – Trade-Off Between Inflation, Unemployment and GDP](https://www.youtube.com/watch?v=q3Uey9ladUg)** — Economics in Many Lessons (12 min)
 - 📚 **[OpenStax Macro 3e – Chapter 25: The Phillips Curve](https://socialsci.libretexts.org/Bookshelves/Economics/Macroeconomics/Principles_of_Macroeconomics_3e_(OpenStax))** — Free textbook chapter with Australian-relevant examples
 
-[VISUAL NEEDED: Downward-sloping Phillips curve in (u, π) space with three labelled points: (3%, 4%), (5%, 3%), (7%, 2%). Mark the NAIRU (u_n = 5%) with a vertical dashed line at u = 5%. Label the slope α = 0.5 on the curve. Arrow indicating direction of movement from contractionary to expansionary policy.]

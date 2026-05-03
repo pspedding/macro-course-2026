@@ -89,9 +89,65 @@ The denominator (1 − b + m) is the leakage rate: saving (1 − b) and imports 
 3. In the model above, if autonomous exports X̄ increase by $20bn (e.g., due to stronger Chinese demand for Australian iron ore), by how much does Y\* increase? Interpret this in the context of Australia's resource export dependence.
    → **Answer:** ΔY\* = ΔX̄ × 1/(1 − b + m) = 20 × (1/0.40) = 20 × 2.5 = **$50bn**. The $20bn export boost is multiplied 2.5 times. This illustrates Australia's structural sensitivity to commodity export demand: a sharp rise in iron ore exports to China amplifies through domestic consumption, creating a sizeable income effect well beyond the direct export revenue.
 
+## Visual — Keynesian Cross and the Multiplier
+
+<div style="overflow-x: auto; margin: 1rem 0;">
+<svg viewBox="0 0 1100 430" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .axis { stroke: #333; stroke-width: 2; }
+    .curve { fill: none; stroke-width: 3; }
+    .guide { stroke: #777; stroke-width: 1.5; stroke-dasharray: 6 5; }
+    .label { font: 16px Arial, sans-serif; fill: #222; }
+    .small { font: 13px Arial, sans-serif; fill: #444; }
+    .title { font: 18px Arial, sans-serif; font-weight: 700; fill: #222; }
+  </style>
+  <text x="550" y="28" text-anchor="middle" class="title">The Keynesian cross</text>
+  <line x1="90" y1="350" x2="1030" y2="350" class="axis" />
+  <line x1="90" y1="350" x2="90" y2="60" class="axis" />
+  <text x="560" y="398" text-anchor="middle" class="label">Output / income, Y</text>
+  <text x="34" y="205" transform="rotate(-90 34 205)" text-anchor="middle" class="label">Aggregate expenditure, AE</text>
+
+  <line x1="120" y1="320" x2="980" y2="90" class="curve" stroke="#444" />
+  <line x1="120" y1="285" x2="900" y2="160" class="curve" stroke="#d62728" />
+  <line x1="120" y1="245" x2="980" y2="105" class="curve" stroke="#ff9896" />
+
+  <circle cx="612" cy="189" r="5" fill="#222" />
+  <circle cx="762" cy="149" r="5" fill="#222" />
+  <line x1="612" y1="189" x2="612" y2="350" class="guide" />
+  <line x1="90" y1="189" x2="612" y2="189" class="guide" />
+  <line x1="762" y1="149" x2="762" y2="350" class="guide" />
+  <line x1="90" y1="149" x2="762" y2="149" class="guide" />
+
+  <text x="884" y="93" class="label">45° line: Y = AE</text>
+  <text x="792" y="164" class="label">AE₀</text>
+  <text x="878" y="110" class="label">AE₁</text>
+  <text x="126" y="278" class="small">Intercept = a − bT̄ + Ī + Ḡ + X̄</text>
+  <text x="126" y="238" class="small">Autonomous-demand increase shifts AE upward</text>
+  <text x="620" y="183" class="label">E₀</text>
+  <text x="770" y="143" class="label">E₁</text>
+  <text x="600" y="370" class="small">Y₀</text>
+  <text x="750" y="370" class="small">Y₁</text>
+  <text x="790" y="194" class="label">slope = b − m</text>
+
+  <line x1="1020" y1="149" x2="1020" y2="189" stroke="#555" stroke-width="2" marker-start="url(#arrowRev)" marker-end="url(#arrow)" />
+  <text x="1034" y="174" class="small">Multiplier gap</text>
+  <line x1="140" y1="282" x2="140" y2="242" stroke="#555" stroke-width="2" marker-start="url(#arrowRev)" marker-end="url(#arrow)" />
+  <text x="150" y="266" class="small">ΔA</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555" />
+    </marker>
+    <marker id="arrowRev" markerWidth="10" markerHeight="10" refX="1" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M9,0 L9,6 L0,3 z" fill="#555" />
+    </marker>
+  </defs>
+</svg>
+</div>
+
+*Figure: The AE line crosses the 45° line where planned expenditure equals output. A rise in autonomous spending shifts AE upward and increases equilibrium income by more than the initial shift — the multiplier effect.*
+
 ## Further Resources
 - 📺 **[Keynesian cross and the multiplier](https://www.youtube.com/watch?v=aSY8XPGChAU)** — Khan Academy (8 min)
 - 📺 **[Fiscal Policy and Stimulus: Crash Course Economics #8](https://www.youtube.com/watch?v=otmgFQHbaDo)** — Crash Course (12 min)
 - 📚 **[RBA — Fiscal Policy Explainer](https://www.rba.gov.au/education/resources/explainers/fiscal-policy.html)** — Keynesian cross mechanics and the formal derivation of the spending multiplier
-
-[VISUAL NEEDED: 45-degree Keynesian cross diagram showing AE = C + I + G + NX line with slope (b − m), intersecting the Y = AE line at equilibrium Y*. Indicate the autonomous spending intercept (a − bT̄ + Ī + Ḡ + X̄) and label the multiplier gap between a demand shock and the resulting income change.]

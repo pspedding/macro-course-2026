@@ -9,9 +9,9 @@
 
 ## Explanation
 
-The standard EAPC, *π = π^e − α(u − u_n)*, assumes all inflation comes from demand pressure (the unemployment gap). An **adverse supply shock** — such as an oil price spike, a drought, or a global supply chain disruption — adds a direct cost-push component. The augmented PC is:
+The standard EAPC, $$\pi = \pi^e - \alpha(u - u_n)$$, assumes all inflation comes from demand pressure (the unemployment gap). An **adverse supply shock** — such as an oil price spike, a drought, or a global supply chain disruption — adds a direct cost-push component. The augmented PC is:
 
-> **π = π^e − α(u − u_n) + ε**
+$$\pi = \pi^e - \alpha(u - u_n) + \varepsilon$$
 
 where **ε** (epsilon) is the **supply shock term**:
 - *ε > 0*: adverse shock (raises inflation for any given unemployment and expectations)

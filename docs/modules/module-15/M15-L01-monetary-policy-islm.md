@@ -106,10 +106,85 @@ The LM shift lowers *r* by 0.33 percentage points and raises output by 33 units.
 3. **Application:** In June–October 2019, the RBA cut the cash rate three times from 1.50% to 0.75%. Using the IS-LM framework, explain why the resulting stimulus to output may have been limited.
    → **Answer:** Even though the LM shifted right, several factors dampened the income effect: (a) imperfect pass-through from the cash rate to lending rates reduced the IS-curve response; (b) weak consumer and business confidence meant the IS curve itself was relatively flat (inelastic investment); (c) with rates already low, the liquidity effect was compressed. The RBA's own assessment noted that monetary policy alone was insufficient and called for fiscal support.
 
+## Visual — Monetary Expansion in the IS-LM Model
+
+<div style="overflow-x: auto; margin: 1rem 0;">
+<svg viewBox="0 0 1200 420" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .axis { stroke: #333; stroke-width: 2; }
+    .curve { fill: none; stroke-width: 3; }
+    .guide { stroke: #777; stroke-width: 1.5; stroke-dasharray: 6 5; }
+    .label { font: 16px Arial, sans-serif; fill: #222; }
+    .small { font: 13px Arial, sans-serif; fill: #444; }
+    .title { font: 18px Arial, sans-serif; font-weight: 700; fill: #222; }
+  </style>
+
+  <!-- Panel 1 -->
+  <text x="300" y="28" text-anchor="middle" class="title">1. Initial IS-LM equilibrium</text>
+  <line x1="80" y1="340" x2="520" y2="340" class="axis" />
+  <line x1="80" y1="340" x2="80" y2="60" class="axis" />
+  <text x="300" y="388" text-anchor="middle" class="label">Output, Y</text>
+  <text x="28" y="205" transform="rotate(-90 28 205)" text-anchor="middle" class="label">Real interest rate, r</text>
+  <line x1="150" y1="120" x2="470" y2="290" class="curve" stroke="#d62728" />
+  <line x1="180" y1="300" x2="430" y2="100" class="curve" stroke="#1f77b4" />
+  <circle cx="310" cy="205" r="5" fill="#222" />
+  <line x1="310" y1="205" x2="310" y2="340" class="guide" />
+  <line x1="80" y1="205" x2="310" y2="205" class="guide" />
+  <text x="412" y="291" class="label">IS</text>
+  <text x="385" y="110" class="label">LM₁</text>
+  <text x="319" y="200" class="label">E₁</text>
+  <text x="292" y="360" class="small">Y₁</text>
+  <text x="58" y="210" class="small">r₁</text>
+
+  <!-- Panel 2 -->
+  <text x="895" y="28" text-anchor="middle" class="title">2. RBA expands money supply: LM shifts right</text>
+  <line x1="670" y1="340" x2="1120" y2="340" class="axis" />
+  <line x1="670" y1="340" x2="670" y2="60" class="axis" />
+  <text x="895" y="388" text-anchor="middle" class="label">Output, Y</text>
+  <text x="618" y="205" transform="rotate(-90 618 205)" text-anchor="middle" class="label">Real interest rate, r</text>
+  <line x1="740" y1="120" x2="1060" y2="290" class="curve" stroke="#d62728" />
+  <line x1="770" y1="300" x2="1020" y2="100" class="curve" stroke="#1f77b4" />
+  <line x1="840" y1="300" x2="1090" y2="100" class="curve" stroke="#6baed6" />
+  <circle cx="900" cy="205" r="5" fill="#222" />
+  <circle cx="972" cy="243" r="5" fill="#222" />
+  <circle cx="900" cy="252" r="4" fill="#6baed6" />
+  <line x1="900" y1="205" x2="900" y2="340" class="guide" />
+  <line x1="972" y1="243" x2="972" y2="340" class="guide" />
+  <line x1="670" y1="205" x2="900" y2="205" class="guide" />
+  <line x1="670" y1="243" x2="972" y2="243" class="guide" />
+  <line x1="670" y1="252" x2="900" y2="252" class="guide" />
+  <text x="1002" y="291" class="label">IS</text>
+  <text x="978" y="110" class="label">LM₁</text>
+  <text x="1044" y="110" class="label">LM₂</text>
+  <text x="908" y="200" class="label">E₁</text>
+  <text x="980" y="238" class="label">E₂</text>
+  <text x="879" y="360" class="small">Y₁</text>
+  <text x="951" y="360" class="small">Y₂</text>
+  <text x="648" y="210" class="small">r₁</text>
+  <text x="648" y="248" class="small">r₂</text>
+  <text x="648" y="257" class="small">rL</text>
+
+  <line x1="900" y1="214" x2="900" y2="247" stroke="#555" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="928" y="214" class="small">Liquidity effect:</text>
+  <text x="928" y="231" class="small">r falls on impact</text>
+
+  <line x1="908" y1="250" x2="965" y2="235" stroke="#555" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="995" y="198" class="small">Income effect:</text>
+  <text x="995" y="215" class="small">Y rises, r partly recovers</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555" />
+    </marker>
+  </defs>
+</svg>
+</div>
+
+*Figure: Monetary expansion shifts LM right. The immediate liquidity effect pushes the interest rate down; then stronger output raises money demand, so the interest rate partially recovers as the economy moves to the new equilibrium with higher Y and lower r than initially.*
+
 ## Further Resources
 
 - 📺 **[IS-LM Model & Diagram – LM Curve Shift from a Monetary Shock](https://www.youtube.com/watch?v=b28lsOUFOtw)** — Economics in Many Lessons (12 min)
 - 📺 **[Intermediate Macroeconomics 5/8: The IS-LM Model](https://www.youtube.com/watch?v=72tKKgw2eCM)** — Marginal Revolution University (15 min)
 - 📚 **[RBA Explainer: Monetary Policy Implementation](https://www.rba.gov.au/education/resources/explainers/monetary-policy-implementation.html)** — How the RBA targets the cash rate
 
-[VISUAL NEEDED: Two-panel IS-LM diagram showing (1) initial equilibrium at (Y₁, r₁) and (2) LM shifting right to new equilibrium at (Y₂, r₂), with arrows indicating liquidity effect (r falls on impact) and income effect (r partially recovers as Y rises). Label both effects clearly.]

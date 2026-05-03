@@ -102,9 +102,66 @@ The rightward shift in LM supports $2,800bn of income at i = 2% (vs. $2,400bn be
 3. During the COVID pandemic (2020–2021), the RBA implemented quantitative easing and held the cash rate at 0.10%. Using the LM framework, describe what this implies about the shape of the LM curve in that period and what it means for the relative effectiveness of fiscal versus monetary policy.
    → **Answer:** Near the zero lower bound (cash rate at 0.10%), the LM curve approaches horizontal (approaching a liquidity trap). With h very large (money demand highly interest-elastic), any additional money supply is absorbed into speculative balances without reducing i further. Monetary policy loses traction: further expansion of M̄ does not lower i or stimulate investment. Fiscal policy (IS shifts) becomes relatively more effective because the horizontal LM means a rightward IS shift raises Y without generating much offsetting interest rate increase (minimal crowding out). This explains why Australia's government relied heavily on fiscal stimulus (JobKeeper, etc.) during 2020 rather than relying solely on the RBA — the RBA had exhausted conventional monetary policy space.
 
+## Visual — The LM Curve and Its Special Cases
+
+<div style="overflow-x: auto; margin: 1rem 0;">
+<svg viewBox="0 0 1200 430" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .axis { stroke: #333; stroke-width: 2; }
+    .curve { fill: none; stroke-width: 3; }
+    .guide { stroke: #777; stroke-width: 1.5; stroke-dasharray: 6 5; }
+    .label { font: 16px Arial, sans-serif; fill: #222; }
+    .small { font: 13px Arial, sans-serif; fill: #444; }
+    .title { font: 18px Arial, sans-serif; font-weight: 700; fill: #222; }
+  </style>
+
+  <!-- Main panel -->
+  <text x="360" y="28" text-anchor="middle" class="title">LM curve in (Y, i) space</text>
+  <line x1="90" y1="350" x2="650" y2="350" class="axis" />
+  <line x1="90" y1="350" x2="90" y2="60" class="axis" />
+  <text x="370" y="395" text-anchor="middle" class="label">Output / income, Y</text>
+  <text x="38" y="205" transform="rotate(-90 38 205)" text-anchor="middle" class="label">Interest rate, i</text>
+  <line x1="150" y1="300" x2="560" y2="120" class="curve" stroke="#d62728" />
+  <line x1="220" y1="300" x2="630" y2="120" class="curve" stroke="#1f77b4" />
+  <line x1="330" y1="221" x2="330" y2="350" class="guide" />
+  <line x1="460" y1="221" x2="460" y2="350" class="guide" />
+  <line x1="90" y1="221" x2="460" y2="221" class="guide" />
+  <text x="510" y="132" class="label">LM₀</text>
+  <text x="580" y="132" class="label">LM₁</text>
+  <text x="378" y="185" class="label">slope = k/h</text>
+  <text x="312" y="368" class="small">Y₀</text>
+  <text x="442" y="368" class="small">Y₁</text>
+  <text x="68" y="226" class="small">i₀</text>
+  <text x="370" y="92" class="small">Higher M̄ shifts LM right/down.</text>
+
+  <!-- Liquidity trap inset -->
+  <rect x="760" y="60" width="360" height="140" rx="10" ry="10" fill="#fafafa" stroke="#d9d9d9" />
+  <text x="940" y="85" text-anchor="middle" class="title">Liquidity trap</text>
+  <line x1="810" y1="170" x2="1080" y2="170" class="curve" stroke="#2ca02c" />
+  <line x1="800" y1="180" x2="1090" y2="180" class="axis" />
+  <line x1="810" y1="185" x2="810" y2="95" class="axis" />
+  <text x="950" y="198" text-anchor="middle" class="small">Y</text>
+  <text x="785" y="140" transform="rotate(-90 785 140)" text-anchor="middle" class="small">i</text>
+  <text x="940" y="158" text-anchor="middle" class="label">LM nearly horizontal</text>
+  <text x="940" y="115" text-anchor="middle" class="small">h → ∞, so k/h → 0</text>
+
+  <!-- Classical inset -->
+  <rect x="760" y="230" width="360" height="140" rx="10" ry="10" fill="#fafafa" stroke="#d9d9d9" />
+  <text x="940" y="255" text-anchor="middle" class="title">Classical case</text>
+  <line x1="950" y1="280" x2="950" y2="350" class="curve" stroke="#9467bd" />
+  <line x1="800" y1="350" x2="1090" y2="350" class="axis" />
+  <line x1="810" y1="355" x2="810" y2="265" class="axis" />
+  <text x="950" y="368" text-anchor="middle" class="small">Y</text>
+  <text x="785" y="310" transform="rotate(-90 785 310)" text-anchor="middle" class="small">i</text>
+  <text x="950" y="300" text-anchor="middle" class="label">LM vertical</text>
+  <text x="950" y="285" text-anchor="middle" class="small">h → 0, so k/h becomes very large</text>
+</svg>
+</div>
+
+*Figure: The LM curve is upward sloping because higher output raises transaction demand for money, requiring a higher interest rate to maintain money market equilibrium. An increase in the money supply shifts LM right/down. In the liquidity trap, LM becomes nearly horizontal; in the classical case, it becomes vertical.*
+
 ## Further Resources
 - 📺 **[LM part of the IS-LM model](https://www.youtube.com/watch?v=yro2jLBfyDQ)** — Khan Academy (8 min)
 - 📺 **[Macroeconomics: The IS-LM Model](https://www.youtube.com/watch?v=e_3clidGpfE)** — Economics in Many Lessons (15 min)
 - 📚 **[RBA — How the RBA Implements Monetary Policy](https://www.rba.gov.au/education/resources/explainers/how-rba-implements-monetary-policy.html)** — LM curve derivation and the role of money demand in Australian monetary analysis
 
-[VISUAL NEEDED: LM curve diagram in (Y, i) space showing the upward-sloping LM curve. Label slope k/h. Show rightward LM shift from M̄ increase. Include inset diagrams showing the two special cases: horizontal LM (liquidity trap, h → ∞) and vertical LM (classical case, h → 0).]
