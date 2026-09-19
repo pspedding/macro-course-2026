@@ -971,6 +971,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../exam-prep/past-exams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Past Exams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../exam-prep/exam-tips/" class="md-nav__link">
         
   
@@ -1929,6 +1957,67 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#the-four-sector-multiplier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Four-Sector Multiplier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Four-Sector Multiplier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planned-aggregate-expenditure-in-the-4-sector-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planned Aggregate Expenditure in the 4-Sector Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equilibrium-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equilibrium Output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-australian-realistic-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked Example (Australian-Realistic Values)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiplier-comparison-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiplier Comparison Table
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#worked-example" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2683,6 +2772,34 @@
     
   
     Demand and Supply Shocks — COVID-19 and Australia as Case Study
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-07/M07.L07-ad-as-pi-y-space/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    M07.L07 — AD-AS in π–Y Space
   
 
     
@@ -6235,6 +6352,54 @@ Y = A × <strong>[1 ÷ (1 − MPC)]</strong></p>
 <blockquote>
 <p><strong>ΔY = k × ΔA</strong></p>
 </blockquote>
+<h2 id="the-four-sector-multiplier">The Four-Sector Multiplier</h2>
+<p>The simple multiplier <span class="arithmatex">\(k = 1/(1-c)\)</span> assumes a closed economy with no taxes and no imports. In the real world — and in ECON1002 — we work with a richer model that includes:
+- A <strong>proportional tax rate</strong> <span class="arithmatex">\(t\)</span> (fraction of income paid in tax)
+- A <strong>marginal propensity to import</strong> <span class="arithmatex">\(m\)</span> (fraction of income spent on imports, which leaks out of the domestic economy)</p>
+<h3 id="planned-aggregate-expenditure-in-the-4-sector-model">Planned Aggregate Expenditure in the 4-Sector Model</h3>
+<div class="arithmatex">\[PAE = \bar{C} + c(1-t)Y + \bar{I} + \bar{G} + \bar{X} - mY\]</div>
+<p>Where <span class="arithmatex">\(\bar{C}, \bar{I}, \bar{G}, \bar{X}\)</span> are autonomous components, <span class="arithmatex">\(c(1-t)\)</span> is the MPC out of gross income (after proportional tax), and <span class="arithmatex">\(m\)</span> is the import leakage.</p>
+<h3 id="equilibrium-output">Equilibrium Output</h3>
+<p>Setting <span class="arithmatex">\(Y = PAE\)</span> and solving:</p>
+<div class="arithmatex">\[Y = \bigl[\bar{C} + \bar{I} + \bar{G} + \bar{X} - c\bar{T}\bigr] \times k_4\]</div>
+<p>Where the <strong>four-sector multiplier</strong> is:</p>
+<div class="arithmatex">\[k_4 = \frac{1}{1 - c(1-t) + m}\]</div>
+<blockquote>
+<p><strong>Check:</strong> When <span class="arithmatex">\(t = 0\)</span> and <span class="arithmatex">\(m = 0\)</span>, the denominator reduces to <span class="arithmatex">\(1 - c\)</span>, giving <span class="arithmatex">\(k = 1/(1-c)\)</span> — the simple 2-sector multiplier. ✅</p>
+</blockquote>
+<h3 id="worked-example-australian-realistic-values">Worked Example (Australian-Realistic Values)</h3>
+<p>Let <span class="arithmatex">\(c = 0.80\)</span>, <span class="arithmatex">\(t = 0.30\)</span>, <span class="arithmatex">\(m = 0.10\)</span>:</p>
+<div class="arithmatex">\[k_4 = \frac{1}{1 - 0.80 \times (1-0.30) + 0.10} = \frac{1}{1 - 0.56 + 0.10} = \frac{1}{0.54} \approx 1.85\]</div>
+<p>Compare to the simple 2-sector multiplier with the same MPC:</p>
+<div class="arithmatex">\[k = \frac{1}{1 - 0.80} = \frac{1}{0.20} = 5.0\]</div>
+<p>Taxes and imports <strong>dramatically reduce</strong> the multiplier from 5.0 to 1.85 — consistent with Australian Treasury empirical estimates of 0.8–1.7.</p>
+<h3 id="multiplier-comparison-table">Multiplier Comparison Table</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Formula</th>
+<th>Example (<span class="arithmatex">\(c = 0.80\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-sector (closed, no tax)</td>
+<td><span class="arithmatex">\(1/(1-c)\)</span></td>
+<td><strong>5.00</strong></td>
+</tr>
+<tr>
+<td>3-sector (with lump-sum/prop. tax)</td>
+<td><span class="arithmatex">\(1/(1-c(1-t))\)</span></td>
+<td><strong>2.27</strong> (<span class="arithmatex">\(t = 0.30\)</span>)</td>
+</tr>
+<tr>
+<td>4-sector (with tax + imports)</td>
+<td><span class="arithmatex">\(1/(1-c(1-t)+m)\)</span></td>
+<td><strong>1.85</strong> (<span class="arithmatex">\(t = 0.30\)</span>, <span class="arithmatex">\(m = 0.10\)</span>)</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Round-by-round logic:</strong>
 If the government spends $1 billion and MPC = 0.80:
 - Round 1: Government spends $1,000M → income rises $1,000M
@@ -6282,6 +6447,14 @@ k = 1 ÷ (1 − 0.60) = 1 ÷ 0.40 = <strong>2.5</strong>
 <p>During the 2008–09 GFC, the Rudd Government sent $900 cash payments to approximately 8.7 million eligible Australians (total ≈ $7.8B). Using a multiplier of 1.5, estimate the total GDP impact.
    → <strong>Answer:</strong> ΔY = 1.5 × <span class="arithmatex">\(7.8B = **\)</span>11.7 billion** additional GDP. (Note: the real multiplier for lump-sum transfers is typically lower than for government purchases because some recipients save the payment — consistent with the observed spending behaviour at the time.)</p>
 </li>
+<li>
+<p><strong>Four-sector multiplier:</strong> The government increases spending by $10B. Given <span class="arithmatex">\(c = 0.75\)</span>, <span class="arithmatex">\(t = 0.25\)</span>, <span class="arithmatex">\(m = 0.12\)</span>: calculate <span class="arithmatex">\(k_4\)</span> and the total ΔY.
+   → <strong>Answer:</strong></p>
+</li>
+<li>MPC out of gross income: <span class="arithmatex">\(c(1-t) = 0.75 \times 0.75 = 0.5625\)</span></li>
+<li><span class="arithmatex">\(k_4 = \dfrac{1}{1 - 0.5625 + 0.12} = \dfrac{1}{0.5575} \approx \mathbf{1.79}\)</span></li>
+<li><span class="arithmatex">\(\Delta Y = k_4 \times \Delta G = 1.79 \times \$10\text{B} \approx \mathbf{\$17.9\text{ billion}}\)</span></li>
+<li>(Compare: if we naively used the 2-sector multiplier, <span class="arithmatex">\(k = 1/(1-0.75) = 4\)</span>, we would over-estimate the GDP impact by more than double.)</li>
 </ol>
 <h2 id="further-resources">Further Resources</h2>
 <ul>
