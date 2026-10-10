@@ -6238,8 +6238,46 @@
       !/[{}]|undefined|null/.test(c.question) && strip(c.answerHtml).length > 15
     );
   }
+  function flashcardUrls() {
+    const here = new URL(window.location.href);
+    const rootPath = here.pathname.replace(/\/daily-bite\/?$/, '/');
+    const root = new URL(rootPath, here.origin);
+    return [
+      new URL('flashcards/', root).href,
+      new URL('flashcards/index.html', root).href,
+      new URL('../flashcards/', here).href,
+      new URL('../flashcards/index.html', here).href
+    ].filter((url, idx, arr) => arr.indexOf(url) === idx);
+  }
+  function extractCardsJson(html) {
+    const marker = 'const ALL_CARDS';
+    const markerIdx = html.indexOf(marker);
+    if (markerIdx < 0) throw new Error('Could not find flashcard data marker');
+    const start = html.indexOf('[', markerIdx);
+    if (start < 0) throw new Error('Could not find flashcard data start');
+
+    let depth = 0;
+    let inString = false;
+    let escaped = false;
+    for (let i = start; i < html.length; i++) {
+      const ch = html[i];
+      if (inString) {
+        if (escaped) escaped = false;
+        else if (ch === '\\') escaped = true;
+        else if (ch === '"') inString = false;
+      } else {
+        if (ch === '"') inString = true;
+        else if (ch === '[') depth++;
+        else if (ch === ']') {
+          depth--;
+          if (depth === 0) return html.slice(start, i + 1);
+        }
+      }
+    }
+    throw new Error('Could not find flashcard data end');
+  }
   async function loadCards() {
-    const candidates = ['../flashcards/', '../flashcards/index.html'];
+    const candidates = flashcardUrls();
     let html = '';
     let lastError = null;
 
@@ -6255,9 +6293,7 @@
     }
 
     if (!html) throw lastError || new Error('Could not load flashcard page');
-    const m = html.match(/const\s+ALL_CARDS\s*=\s*(\[[\s\S]*?\])\s*;/);
-    if (!m) throw new Error('Could not find flashcard data');
-    return usableCards(JSON.parse(m[1]));
+    return usableCards(JSON.parse(extractCardsJson(html)));
   }
   function selectModule(mode) {
     const modules = [...new Set(allCards.map(c => c.module))].sort();
