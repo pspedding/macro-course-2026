@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -923,62 +923,6 @@
     
   
     Mock IST
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../exam-prep/mock-final-exam/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    🧪 Mock Final Exam
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../exam-prep/past-exams/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Past Exams
   
 
     
@@ -1970,34 +1914,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modules/module-04/M04.L07-pre-keynesian-classical-model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    The Pre-Keynesian (Classical) Theory of Output
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -2644,34 +2560,6 @@
     
   
     Demand and Supply Shocks — COVID-19 and Australia as Case Study
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modules/module-07/M07.L07-ad-as-pi-y-space/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    M07.L07 — AD-AS in π–Y Space
   
 
     
@@ -6351,10 +6239,23 @@
     );
   }
   async function loadCards() {
-    const res = await fetch('../flashcards/');
-    if (!res.ok) throw new Error('Could not load flashcard page');
-    const html = await res.text();
-    const m = html.match(/const ALL_CARDS = ([\s\S]*?);\s*\n\s*let deck/);
+    const candidates = ['../flashcards/', '../flashcards/index.html'];
+    let html = '';
+    let lastError = null;
+
+    for (const url of candidates) {
+      try {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`Could not load ${url}`);
+        html = await res.text();
+        break;
+      } catch (e) {
+        lastError = e;
+      }
+    }
+
+    if (!html) throw lastError || new Error('Could not load flashcard page');
+    const m = html.match(/const\s+ALL_CARDS\s*=\s*(\[[\s\S]*?\])\s*;/);
     if (!m) throw new Error('Could not find flashcard data');
     return usableCards(JSON.parse(m[1]));
   }
@@ -6573,7 +6474,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       
