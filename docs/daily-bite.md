@@ -151,10 +151,23 @@
     );
   }
   async function loadCards() {
-    const res = await fetch('../flashcards/');
-    if (!res.ok) throw new Error('Could not load flashcard page');
-    const html = await res.text();
-    const m = html.match(/const ALL_CARDS = ([\s\S]*?);\s*\n\s*let deck/);
+    const candidates = ['../flashcards/', '../flashcards/index.html'];
+    let html = '';
+    let lastError = null;
+
+    for (const url of candidates) {
+      try {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`Could not load ${url}`);
+        html = await res.text();
+        break;
+      } catch (e) {
+        lastError = e;
+      }
+    }
+
+    if (!html) throw lastError || new Error('Could not load flashcard page');
+    const m = html.match(/const\s+ALL_CARDS\s*=\s*(\[[\s\S]*?\])\s*;/);
     if (!m) throw new Error('Could not find flashcard data');
     return usableCards(JSON.parse(m[1]));
   }
