@@ -150,16 +150,13 @@ This course covers introductory and intermediate macroeconomics following the st
   }
 
   function renderSafe(el,text){
-    // Protect LaTeX delimiters before Markdown parsing.
-    // marked strips backslashes, so \( becomes ( and \[ becomes [.
-    // Replace with placeholders, parse markdown, then restore.
     var t=text
-      .replace(/\\[/g,'DLOPEN').replace(/\\]/g,'DLCLOSE')
-      .replace(/\\(/g,'ILOPEN').replace(/\\)/g,'ILCLOSE');
+      .split("\[").join("DLOPEN").split("\]").join("DLCLOSE")
+      .split("\(").join("ILOPEN").split("\)").join("ILCLOSE");
     var html=marked.parse(t);
     html=html
-      .replace(/DLOPEN/g,'\[').replace(/DLCLOSE/g,'\]' )
-      .replace(/ILOPEN/g,'\(').replace(/ILCLOSE/g,'\)');
+      .split("DLOPEN").join("\[").split("DLCLOSE").join("\]")
+      .split("ILOPEN").join("\(").split("ILCLOSE").join("\)");
     el.innerHTML=DOMPurify.sanitize(html,{USE_PROFILES:{html:true}});
     if(window.MathJax&&MathJax.typesetPromise) MathJax.typesetPromise([el]).catch(function(){});
   }
