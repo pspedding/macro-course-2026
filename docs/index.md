@@ -52,6 +52,17 @@ This course covers introductory and intermediate macroeconomics following the st
 <!-- CDN: DOMPurify (XSS sanitisation) + marked (markdown rendering) -->
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath:  [["\(", "\)"]],
+    displayMath: [["\[", "\]"]],
+    processEscapes: true
+  },
+  options: { skipHtmlTags: ["script","noscript","style","textarea","pre"] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
 
 <div id="econ-chat-widget" style="
   margin: 2rem 0;
