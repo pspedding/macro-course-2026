@@ -139,7 +139,7 @@ window.MathJax = {
     var mm=p.match(/module-([0-9]+)/i);
     var lm=p.match(/(M[0-9]{2}[-.]L[0-9]{2}[^/]*)/i);
     return {
-      course: cm ? cm[0].replace(/-course(-[0-9]+)?/,'') : null,
+      course: cm ? ({'macro-course':'macroeconomics','micro-course':'microeconomics','econ-course':'econometrics'})[cm[0]]||cm[0].replace(/-course(-[0-9]+)?/,'') : null,
       module: mm ? 'M'+(mm[1].length<2?'0':'')+mm[1] : null,
       lesson: lm ? lm[1] : null
     };
