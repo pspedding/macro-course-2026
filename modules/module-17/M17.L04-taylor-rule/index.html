@@ -6197,21 +6197,21 @@
 </code></pre></div>
 <p><strong>Notation:</strong>
 - i = prescribed nominal policy interest rate (% p.a.)
-- r<em> = neutral real interest rate (the real rate consistent with Y = Yₙ and π = π</em>)
+- r* = neutral real interest rate (the real rate consistent with Y = Yₙ and π = π*)
 - π = current inflation rate (% p.a.)
-- π<em> = inflation target (% p.a.)
+- π* = inflation target (% p.a.)
 - α_π = weight on the inflation gap (standard value: 0.5)
 - α_Y = weight on the output gap (standard value: 0.5)
 - (Y − Yₙ)/Yₙ = output gap (positive in boom, negative in recession)
-- (π − π</em>) = inflation gap (positive when inflation above target)</p>
+- (π − π*) = inflation gap (positive when inflation above target)</p>
 <p><strong>Decomposition of the Taylor rule:</strong>
 - <code>r*</code>: base real rate — what rate would be neutral if inflation is on target and output is at potential
 - <code>+ π</code>: converts real neutral rate to nominal (Fisher equation: i = r + π)
 - <code>+ α_π(π − π*)</code>: prescribes <em>extra</em> tightening when inflation exceeds target (the "Taylor principle": the coefficient on π in the full rule equals 1 + α_π &gt; 1, ensuring the real rate rises when inflation rises)
 - <code>+ α_Y × gap</code>: prescribes easing when output is below potential (counter-cyclical stabilisation)</p>
 <p><strong>Australian parameters (2024):</strong>
-- r<em> ≈ 2.5% (historical RBA estimate of the </em><em>neutral real rate</em><em>; revised down to ~0.75–1.0% post-COVID)
-- π</em> = 2.5% (midpoint of RBA 2–3% target band)
+- r* ≈ 2.5% (historical RBA estimate of the <strong>neutral real rate</strong>; revised down to ~0.75–1.0% post-COVID)
+- π* = 2.5% (midpoint of RBA 2–3% target band)
 - Standard Taylor weights: α_π = α_Y = 0.5</p>
 <p><strong>Rules vs. discretion debate:</strong>
 - <em>Rules</em>: credible, transparent, reduce time-inconsistency problem (Kydland–Prescott 1977); anchor expectations
@@ -6221,7 +6221,7 @@
 <p><strong>Given (approximating Australia, mid-2022):</strong>
 - π = 7.0% (annual CPI inflation)
 - Output gap = +2% (post-COVID reopening boom, Y above Yₙ)
-- r<em> = 2.5%, π</em> = 2.5%, α_π = 0.5, α_Y = 0.5</p>
+- r* = 2.5%, π* = 2.5%, α_π = 0.5, α_Y = 0.5</p>
 <p><strong>Step 1 — Inflation gap:</strong>
 <div class="highlight"><pre><span></span><code>π − π* = 7.0% − 2.5% = 4.5%
 </code></pre></div></p>
@@ -6255,24 +6255,24 @@ Still very high — the gap remains substantial, suggesting the RBA exercised si
    → <strong>Answer:</strong> The Taylor principle states that when inflation rises by 1 pp, the nominal interest rate must rise by <em>more</em> than 1 pp — so the <em>real</em> interest rate rises. In the Taylor rule, the coefficient on π in full form is (1 + α_π) = 1.5 &gt; 1. If the real rate did not rise with inflation, monetary policy would be effectively loosened in real terms when inflation rises — amplifying rather than dampening the inflationary pressure. Violating the Taylor principle generates explosive inflation dynamics or self-fulfilling inflationary spirals.</p>
 </li>
 <li>
-<p><strong>Numerical:</strong> Using the Taylor rule with r<em> = 2.0%, π</em> = 2.0%, α_π = 0.5, α_Y = 0.5: calculate the prescribed interest rate if inflation is 3.5% and the output gap is −1%.
+<p><strong>Numerical:</strong> Using the Taylor rule with r* = 2.0%, π* = 2.0%, α_π = 0.5, α_Y = 0.5: calculate the prescribed interest rate if inflation is 3.5% and the output gap is −1%.
    → <strong>Answer:</strong><br />
    Inflation gap = 3.5% − 2.0% = 1.5%<br />
    Output gap = −1%<br />
-   i = r<em> + π + α_π(π − π</em>) + α_Y × gap<br />
+   i = r* + π + α_π(π − π*) + α_Y × gap<br />
    i = 2.0 + 3.5 + 0.5 × 1.5 + 0.5 × (−1.0)<br />
    i = 2.0 + 3.5 + 0.75 − 0.50<br />
 <strong>i = 5.75%</strong><br />
    The rule prescribes 5.75%. The above-target inflation (1.5% gap) adds 0.75 pp while the negative output gap (recession) subtracts 0.5 pp — a net positive prescription, reflecting that inflation control dominates in this scenario.</p>
 </li>
 <li>
-<p><strong>Application:</strong> In 2020, the RBA cut the cash rate to 0.10% and implemented Yield Curve Control. If π = 0.5%, Y was below Yₙ by 3%, and r<em> = 0.5% (pandemic estimate), what does the Taylor rule prescribe? Comment on the zero lower bound problem.
-   → </em><em>Answer:</em><em><br />
+<p><strong>Application:</strong> In 2020, the RBA cut the cash rate to 0.10% and implemented Yield Curve Control. If π = 0.5%, Y was below Yₙ by 3%, and r* = 0.5% (pandemic estimate), what does the Taylor rule prescribe? Comment on the zero lower bound problem.
+   → <strong>Answer:</strong><br />
    Inflation gap = 0.5% − 2.5% = −2.0%<br />
    Output gap = −3%<br />
    i = 0.5 + 0.5 + 0.5 × (−2.0) + 0.5 × (−3.0)<br />
-   i = 0.5 + 0.5 − 1.0 − 1.5 = </em><em>−1.5%</em><em><br />
-   The Taylor rule prescribes a </em>negative* nominal rate (−1.5%), which is impossible with standard tools (zero lower bound: i ≥ 0). This explains why the RBA moved to unconventional policies (YCC, forward guidance, quantitative easing) during COVID — the Taylor rule could not be implemented through conventional rate cuts alone.</p>
+   i = 0.5 + 0.5 − 1.0 − 1.5 = <strong>−1.5%</strong><br />
+   The Taylor rule prescribes a <em>negative</em> nominal rate (−1.5%), which is impossible with standard tools (zero lower bound: i ≥ 0). This explains why the RBA moved to unconventional policies (YCC, forward guidance, quantitative easing) during COVID — the Taylor rule could not be implemented through conventional rate cuts alone.</p>
 </li>
 </ol>
 <h2 id="further-resources">Further Resources</h2>

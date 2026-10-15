@@ -6239,8 +6239,8 @@ k* = [s / (δ + n + g)]^(1/(1−α))
 <div class="highlight"><pre><span></span><code>y* = k*ᵅ = [s / (δ + n + g)]^(α/(1−α))
 </code></pre></div></p>
 <p><strong>Key comparative statics:</strong>
-- Higher s → higher k<em> and y</em> (but not higher long-run growth rate — only level effect)
-- Higher δ, n, or g → lower k<em> and y</em> (more break-even investment required)
+- Higher s → higher k* and y* (but not higher long-run growth rate — only level effect)
+- Higher δ, n, or g → lower k* and y* (more break-even investment required)
 - Higher α → more sensitive k* to changes in s</p>
 <h2 id="worked-example">Worked Example</h2>
 <p><strong>Australian parameters:</strong> s = 0.25, δ = 0.05, n = 0.015, g = 0.015, α = 0.35</p>
@@ -6253,7 +6253,7 @@ k* = [s / (δ + n + g)]^(1/(1−α))
 <p><strong>Step 3 — Compute the exponent:</strong>
 <div class="highlight"><pre><span></span><code>1/(1−α) = 1/(1 − 0.35) = 1/0.65 = 1.5385
 </code></pre></div></p>
-<p><strong>Step 4 — Compute k*:</strong>
+<p><em><em>Step 4 — Compute k</em>:</em>*
 <div class="highlight"><pre><span></span><code>k* = 3.125^(1.5385)
 
 Taking logs: ln(k*) = 1.5385 × ln(3.125)
@@ -6261,7 +6261,7 @@ ln(3.125) = 1.1394
 ln(k*) = 1.5385 × 1.1394 = 1.7529
 k* = e^1.7529 = 5.771
 </code></pre></div></p>
-<p><strong>Step 5 — Compute y*:</strong>
+<p><em><em>Step 5 — Compute y</em>:</em>*
 <div class="highlight"><pre><span></span><code>y* = k*ᵅ = 5.771^0.35
 
 Taking logs: ln(y*) = 0.35 × ln(5.771) = 0.35 × 1.7529 = 0.6135
@@ -6271,7 +6271,7 @@ y* = e^0.6135 = 1.847
 <div class="highlight"><pre><span></span><code>Investment: s·y* = 0.25 × 1.847 = 0.4618
 Break-even: (δ+n+g)·k* = 0.080 × 5.771 = 0.4617  ✓  (small rounding difference)
 </code></pre></div></p>
-<p><strong>Interpretation:</strong> In steady state, an economy with Australian parameters has k<em> ≈ 5.77 units of capital per effective worker and produces y</em> ≈ 1.85 units of output per effective worker. 25% of this output (≈ 0.46) is invested, exactly replacing depreciation and equipping new effective workers.</p>
+<p><strong>Interpretation:</strong> In steady state, an economy with Australian parameters has k* ≈ 5.77 units of capital per effective worker and produces y* ≈ 1.85 units of output per effective worker. 25% of this output (≈ 0.46) is invested, exactly replacing depreciation and equipping new effective workers.</p>
 <p><strong>Step 7 — Output per actual worker (grows at rate g in steady state):</strong>
 <div class="highlight"><pre><span></span><code>Y/L = y × A = k*ᵅ × A
 Since A grows at rate g = 1.5%, Y/L grows at 1.5% per year in steady state.
@@ -6279,7 +6279,7 @@ Since A grows at rate g = 1.5%, Y/L grows at 1.5% per year in steady state.
 This matches Australia's long-run GDP per capita growth of ~1.5–2%.</p>
 <h2 id="common-misconception">Common Misconception</h2>
 <p><strong>Misconception:</strong> "A higher saving rate leads to permanently faster economic growth in the Solow model."</p>
-<p><strong>Correction:</strong> In the Solow model, a higher saving rate raises the <em>level</em> of k<em> and y</em> (a level effect), but not the long-run growth <em>rate</em>. In steady state, output per effective worker y<em> is constant regardless of s. Output per actual worker Y/L grows at rate g (technological progress), independent of s. The saving rate determines </em>where* on the growth path the economy sits, not how fast it travels along it. Permanent growth effects require endogenous growth models (Romer, Lucas) where knowledge/technology is itself produced by saving and investment.</p>
+<p><strong>Correction:</strong> In the Solow model, a higher saving rate raises the <em>level</em> of k* and y* (a level effect), but not the long-run growth <em>rate</em>. In steady state, output per effective worker y* is constant regardless of s. Output per actual worker Y/L grows at rate g (technological progress), independent of s. The saving rate determines <em>where</em> on the growth path the economy sits, not how fast it travels along it. Permanent growth effects require endogenous growth models (Romer, Lucas) where knowledge/technology is itself produced by saving and investment.</p>
 <h2 id="practice-prompts">Practice Prompts</h2>
 <ol>
 <li>
@@ -6287,28 +6287,28 @@ This matches Australia's long-run GDP per capita growth of ~1.5–2%.</p>
    → <strong>Answer:</strong> Capital per effective worker k = K/(AL). As A grows at rate g, the denominator (AL) grows, so k would fall even if K were constant. To maintain k at its current level, investment must also cover this "dilution" effect. More precisely: d(K/AL)/dt = (K̇·AL − K·(Ȧ·L + A·L̇)) / (AL)² = K̇/(AL) − K·(n+g)/(AL) = (K̇/AL) − (n+g)k. Setting this equal to sk^α − (n+g)k gives the full equation. The gk term represents the investment needed to equip each unit of new technological capability with the existing capital-per-effective-worker ratio.</p>
 </li>
 <li>
-<p><strong>Numerical:</strong> An economy has s = 0.30, δ = 0.06, n = 0.02, g = 0.02, α = 0.40. Derive k<em> and y</em>.
+<p><strong>Numerical:</strong> An economy has s = 0.30, δ = 0.06, n = 0.02, g = 0.02, α = 0.40. Derive k* and y*.
    → <strong>Answer:</strong><br />
    δ + n + g = 0.06 + 0.02 + 0.02 = 0.10<br />
    s/(δ+n+g) = 0.30 / 0.10 = 3.0<br />
    1/(1−α) = 1/(1−0.4) = 1/0.6 = 1.6667<br />
-   k<em> = 3.0^(1.6667)<br />
-   ln(k</em>) = 1.6667 × ln(3.0) = 1.6667 × 1.0986 = 1.8310<br />
-<strong>k* = e^1.8310 = 6.238</strong><br />
-   y<em> = k</em>^0.4 = 6.238^0.4<br />
-   ln(y<em>) = 0.4 × 1.8310 = 0.7324<br />
-</em><em>y</em> = e^0.7324 = 2.080*<em><br />
+   k* = 3.0^(1.6667)<br />
+   ln(k*) = 1.6667 × ln(3.0) = 1.6667 × 1.0986 = 1.8310<br />
+<em><em>k</em> = e^1.8310 = 6.238**<br />
+   y</em> = k*^0.4 = 6.238^0.4<br />
+   ln(y*) = 0.4 × 1.8310 = 0.7324<br />
+<em><em>y</em> = e^0.7324 = 2.080**<br />
    Verify: s·y</em> = 0.30 × 2.080 = 0.624; (δ+n+g)·k* = 0.10 × 6.238 = 0.624 ✓</p>
 </li>
 <li>
-<p><strong>Application:</strong> If Australia's saving rate rose from 0.25 to 0.30 (a 5 pp increase), by what percentage would the steady-state capital per effective worker (k<em>) increase? Use α = 0.35, δ = 0.05, n = 0.015, g = 0.015.
-   → </em><em>Answer:</em><em><br />
-   k</em>(s=0.30) = [0.30/0.080]^(1/0.65) = [3.75]^1.5385<br />
-   ln(k<em>_new) = 1.5385 × ln(3.75) = 1.5385 × 1.3218 = 2.0337<br />
-   k</em>_new = e^2.0337 = 7.637<br />
-   From worked example: k<em>_old = 5.771<br />
-   Percentage increase = (7.637 − 5.771)/5.771 = 1.866/5.771 = </em><em>0.323 = 32.3%</em><em><br />
-   A 20% rise in the saving rate (from 0.25 to 0.30) raises k</em> by approximately 32%, illustrating how the level effect is amplified through the exponent 1/(1−α) = 1.54.</p>
+<p><strong>Application:</strong> If Australia's saving rate rose from 0.25 to 0.30 (a 5 pp increase), by what percentage would the steady-state capital per effective worker (k*) increase? Use α = 0.35, δ = 0.05, n = 0.015, g = 0.015.
+   → <strong>Answer:</strong><br />
+   k*(s=0.30) = [0.30/0.080]^(1/0.65) = [3.75]^1.5385<br />
+   ln(k*_new) = 1.5385 × ln(3.75) = 1.5385 × 1.3218 = 2.0337<br />
+   k*_new = e^2.0337 = 7.637<br />
+   From worked example: k*_old = 5.771<br />
+   Percentage increase = (7.637 − 5.771)/5.771 = 1.866/5.771 = <strong>0.323 = 32.3%</strong><br />
+   A 20% rise in the saving rate (from 0.25 to 0.30) raises k* by approximately 32%, illustrating how the level effect is amplified through the exponent 1/(1−α) = 1.54.</p>
 </li>
 </ol>
 <h2 id="visual-solow-mathematics-in-phase-diagram-form">Visual — Solow Mathematics in Phase-Diagram Form</h2>
@@ -6347,7 +6347,7 @@ This matches Australia's long-run GDP per capita growth of ~1.5–2%.</p>
 </svg>
 </div>
 
-<p><em>Figure: The Solow steady state k</em> is where the saving curve sk^α intersects the break-even line (δ+n+g)k. Left of k<em>, capital deepening occurs (k̇ &gt; 0); right of k</em>, capital per effective worker shrinks (k̇ &lt; 0).*</p>
+<p><em>Figure: The Solow steady state k</em> is where the saving curve sk^α intersects the break-even line (δ+n+g)k. Left of k*, capital deepening occurs (k̇ &gt; 0); right of k*, capital per effective worker shrinks (k̇ &lt; 0).*</p>
 <h2 id="further-resources">Further Resources</h2>
 <ul>
 <li>📺 <strong><a href="https://www.youtube.com/watch?v=aywhE3BpJOs">Solow Growth Model Part 1: Model Intro &amp; Solution</a></strong> — Intermediate Macro Series (18 min)</li>

@@ -6212,10 +6212,10 @@
 <div class="highlight"><pre><span></span><code>k̇ = sk^α − (δ + n + g)k
 </code></pre></div></p>
 <p><strong>Key regions:</strong>
-- <em>If k &lt; k</em>:<em> sk^α &gt; (δ+n+g)k  →  k̇ &gt; 0  → k is </em>rising<em> (economy accumulating capital)
-- </em>If k &gt; k<em>:</em> sk^α &lt; (δ+n+g)k  →  k̇ &lt; 0  → k is <em>falling</em> (economy decumulating toward k<em>)
-- </em>If k = k<em>:</em> k̇ = 0  → steady state (no change)</p>
-<p>The steady state k<em> is </em><em>globally stable</em><em>: from any initial k₀ &gt; 0, the economy converges to k</em>.</p>
+- <em>If k &lt; k</em>:* sk^α &gt; (δ+n+g)k  →  k̇ &gt; 0  → k is <em>rising</em> (economy accumulating capital)
+- <em>If k &gt; k</em>:* sk^α &lt; (δ+n+g)k  →  k̇ &lt; 0  → k is <em>falling</em> (economy decumulating toward k*)
+- <em>If k = k</em>:* k̇ = 0  → steady state (no change)</p>
+<p>The steady state k* is <strong>globally stable</strong>: from any initial k₀ &gt; 0, the economy converges to k*.</p>
 <p><strong>Speed of convergence:</strong> Near the steady state, the convergence rate is approximately:
 <div class="highlight"><pre><span></span><code>speed ≈ (1−α)(δ + n + g)
 </code></pre></div>
@@ -6226,8 +6226,8 @@ Higher δ, n, g or lower α → faster convergence. For Australia: (1−0.35)(0.
 </code></pre></div>
 <p>yielded λ ≈ 0.02 (2% per year convergence speed) — consistent with the Solow model prediction.</p>
 <p><strong>Asia-Pacific evidence:</strong>
-- <strong>South Korea and Taiwan:</strong> Both started the 1960s with low capital-per-worker but implemented high saving rates (s ≈ 0.35–0.40) and rapid human capital accumulation. Conditional on their parameters, their k<em> is high — and they have been converging toward it rapidly (~5–7% p.a. growth). This is </em>conditional<em> convergence, not absolute.
-- </em><em>Australia:</em><em> Already close to its own k</em> — slow, steady 1.5–2% growth reflects transitional dynamics near the steady state combined with slow growth in A.
+- <strong>South Korea and Taiwan:</strong> Both started the 1960s with low capital-per-worker but implemented high saving rates (s ≈ 0.35–0.40) and rapid human capital accumulation. Conditional on their parameters, their k* is high — and they have been converging toward it rapidly (~5–7% p.a. growth). This is <em>conditional</em> convergence, not absolute.
+- <strong>Australia:</strong> Already close to its own k* — slow, steady 1.5–2% growth reflects transitional dynamics near the steady state combined with slow growth in A.
 - <strong>Australian states:</strong> Similar parameters (same technology, institutions, policies) → should show absolute convergence. Evidence supports this: poorer states (NT, Tasmania) have shown higher growth rates, closing the gap with NSW/Victoria.</p>
 <h2 id="worked-example">Worked Example</h2>
 <p><strong>Setup:</strong> α = 0.35, s = 0.25, δ+n+g = 0.08, k* = 5.771 (from M18.L02)</p>
@@ -6293,10 +6293,10 @@ Capital is declining. The economy is above k* and disinvesting (net capital per 
 </tr>
 </tbody>
 </table>
-<p>Far below k<em>: growth is fast. Near k</em>: growth is slow. Above k<em>: capital declines. This generates the </em><em>convergence dynamic</em><em> — faster growth for low-k economies </em>conditional on<em> having the same k</em>.</p>
+<p>Far below k*: growth is fast. Near k*: growth is slow. Above k*: capital declines. This generates the <strong>convergence dynamic</strong> — faster growth for low-k economies <em>conditional on</em> having the same k*.</p>
 <h2 id="common-misconception">Common Misconception</h2>
 <p><strong>Misconception:</strong> "The Solow model predicts that poor countries should always grow faster than rich countries (absolute convergence)."</p>
-<p><strong>Correction:</strong> The Solow model predicts that countries grow faster when further <em>below their own k</em><em>. A poor country with low s and high n may have a low k</em> — it converges quickly to its (low) steady state, then grows at rate g just like a rich country. There is no prediction that poor countries will catch up with rich ones unless they have the same structural parameters (s, δ, n, g, α). The failure of absolute convergence in sub-Saharan Africa (low s, high n, political instability reducing effective δ) is perfectly consistent with the Solow model: those countries have low k<em> values and are already near them. Convergence is </em>conditional*, not absolute.</p>
+<p><strong>Correction:</strong> The Solow model predicts that countries grow faster when further <em>below their own k</em><em>. A poor country with low s and high n may have a low k</em> — it converges quickly to its (low) steady state, then grows at rate g just like a rich country. There is no prediction that poor countries will catch up with rich ones unless they have the same structural parameters (s, δ, n, g, α). The failure of absolute convergence in sub-Saharan Africa (low s, high n, political instability reducing effective δ) is perfectly consistent with the Solow model: those countries have low k* values and are already near them. Convergence is <em>conditional</em>, not absolute.</p>
 <h2 id="practice-prompts">Practice Prompts</h2>
 <ol>
 <li>
@@ -6304,21 +6304,21 @@ Capital is declining. The economy is above k* and disinvesting (net capital per 
    → <strong>Answer:</strong> MRW (1992) found that when growth regressions control for saving rates, population growth rates, and human capital (an augmented Solow model), the data exhibit strong conditional convergence — exactly as predicted. Countries with similar structural parameters converge to similar income levels, with poorer (lower-k) countries growing faster. The coefficient on initial income in the augmented growth regression is approximately −0.02, consistent with the Solow model's predicted convergence speed of about 2% per year. This vindicated the Solow model against critics who pointed to the failure of <em>unconditional</em> convergence.</p>
 </li>
 <li>
-<p><strong>Numerical:</strong> Using the Solow model with k<em> = 5.771, α = 0.35, s = 0.25, δ+n+g = 0.08, calculate k̇ at k₀ = 4.0. Is the economy below or above steady state? What is the growth rate of k?
-   → </em><em>Answer:</em><em><br />
+<p><strong>Numerical:</strong> Using the Solow model with k* = 5.771, α = 0.35, s = 0.25, δ+n+g = 0.08, calculate k̇ at k₀ = 4.0. Is the economy below or above steady state? What is the growth rate of k?
+   → <strong>Answer:</strong><br />
    s·k₀ᵅ = 0.25 × 4.0^0.35<br />
    ln(4.0^0.35) = 0.35 × ln(4.0) = 0.35 × 1.3863 = 0.4852<br />
    4.0^0.35 = e^0.4852 = 1.6245<br />
    s·y₀ = 0.25 × 1.6245 = 0.4061<br />
    Break-even: 0.08 × 4.0 = 0.3200<br />
-   k̇ = 0.4061 − 0.3200 = </em><em>+0.0861</em><em><br />
-   k₀ = 4.0 &lt; k</em> = 5.771: economy is <strong>below</strong> steady state.<br />
+   k̇ = 0.4061 − 0.3200 = <strong>+0.0861</strong><br />
+   k₀ = 4.0 &lt; k* = 5.771: economy is <strong>below</strong> steady state.<br />
    Growth rate of k = 0.0861/4.0 = <strong>2.15% per year</strong><br />
    (Slower than at k₀=2.0 because now closer to k*)</p>
 </li>
 <li>
 <p><strong>Application:</strong> Taiwan's real GDP per worker in 1960 was approximately 15% of the US level. By 2023, it had risen to about 85% of the US level. Is this consistent with conditional or absolute convergence? What structural factors drove Taiwan's rapid convergence?
-   → <strong>Answer:</strong> This is consistent with <strong>conditional convergence</strong>. Taiwan's structural parameters shifted dramatically: saving rates rose from ~10% to ~35%, education and human capital investment surged, institutions strengthened, and export-led growth raised TFP growth. These changes raised Taiwan's k<em> substantially (high s → high k</em>). Taiwan was far below its new, higher k<em>, driving rapid capital accumulation and GDP growth. This is not absolute convergence (Taiwan converged to </em>its own<em> higher k</em>, which happened to approach the US level) — it reflects the Solow model's prediction that countries with higher s and lower n converge to higher k<em> and y</em>.</p>
+   → <strong>Answer:</strong> This is consistent with <strong>conditional convergence</strong>. Taiwan's structural parameters shifted dramatically: saving rates rose from ~10% to ~35%, education and human capital investment surged, institutions strengthened, and export-led growth raised TFP growth. These changes raised Taiwan's k* substantially (high s → high k*). Taiwan was far below its new, higher k*, driving rapid capital accumulation and GDP growth. This is not absolute convergence (Taiwan converged to <em>its own</em> higher k*, which happened to approach the US level) — it reflects the Solow model's prediction that countries with higher s and lower n converge to higher k* and y*.</p>
 </li>
 </ol>
 <h2 id="visual-convergence-in-the-solow-model">Visual — Convergence in the Solow Model</h2>
